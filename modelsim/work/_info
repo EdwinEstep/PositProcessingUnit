@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Edwin/Documents/College/cpe527/LAB4/modelsim
 vabs_regime
-Z0 !s110 1670448037
+Z0 !s110 1670462359
 !i10b 1
 !s100 bU^lVA<5Y[0Y<9RYVS97N3
 ITmSY=SQ:M@QhN<eRbM[RR2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1670448037.000000
+Z7 !s108 1670462359.000000
 Z8 !s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
 !i113 1
@@ -270,11 +270,11 @@ R11
 vposit_add_8bit_tb_v
 R0
 !i10b 1
-!s100 i];Ag1?[8ST81e9E9D3Ra2
-IR??@mi7]m6kg1SXkLT^k^1
+!s100 `9X]?Nm5c<Qgd]1[RH<c=3
+IX_d`3@JYUAa?^LjY3MjMU3
 R1
 R2
-w1669830607
+w1670457719
 8C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v
 FC:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v
 L0 2
@@ -292,13 +292,13 @@ vppu
 Z12 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R0
 !i10b 1
-!s100 >Q52G7TnJ5f:[M0bJm<af3
-I[W64G`Q0M@Vcl6==z_LDY2
+!s100 FlJBZ;L0`1Z3^nH@AgTcd0
+IGmma8gb8fZT9U@hjCJD^41
 R1
 !s105 ppu_sv_unit
 S1
 R2
-w1670447927
+w1670459975
 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
 L0 17
@@ -306,7 +306,7 @@ R6
 r1
 !s85 0
 31
-R7
+!s108 1670462358.000000
 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
 !i113 1
@@ -381,16 +381,16 @@ vtb_ppu
 R12
 R0
 !i10b 1
-!s100 l7=U8UkO[gkXmB03N`>T^0
-I?KEbK_LJgJV1P?zMT@UYC1
+!s100 Q9n<LlkKhh5kZ5eLjYLR91
+IbViXUJj3VnzFN6WP5FlEO1
 R1
 !s105 tb_ppu_sv_unit
 S1
 R2
-w1669830538
+w1670460370
 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
-L0 10
+L0 12
 R6
 r1
 !s85 0
