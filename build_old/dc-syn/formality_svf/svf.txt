@@ -1,0 +1,927 @@
+
+
+##################################################################################
+# © 2002-2021 Synopsys, Inc. This Synopsys product and all associated
+# documentation and files are proprietary to Synopsys, Inc. and may only be
+# used pursuant to the terms and conditions of a written license agreement with
+# Synopsys, Inc. All other use, reproduction, modification, or distribution of
+# the Synopsys product or the associated documentation or files is strictly
+# prohibited.
+##################################################################################
+
+
+
+guide \
+  -tool { Design Compiler } \
+  -version { T-2022.03-SP3 built Jul 12, 2022 } \
+  -SVF { 21.230 } \
+  -timestamp { Wed Dec  7 20:52:00 2022 } 
+
+## Operation Id: 1
+guide_environment \
+  { { dc_product_version T-2022.03-SP3 } \
+    { dc_product_build_date { Jul 12, 2022 } } \
+    { bus_dimension_separator_style ][ } \
+    { bus_extraction_style %s\[%d:%d\] } \
+    { bus_multiple_separator_style , } \
+    { bus_naming_style %s[%d] } \
+    { bus_range_separator_style : } \
+    { dc_allow_rtl_pg false } \
+    { hdlin_allow_4state_parameters TRUE } \
+    { hdlin_unified_rtl_read FALSE } \
+    { hdlin_enable_hier_naming FALSE } \
+    { hdlin_enable_upf_compatible_naming FALSE } \
+    { hdlin_generate_naming_style %s_%d } \
+    { hdlin_generate_separator_style _ } \
+    { hdlin_infer_enumerated_types FALSE } \
+    { hdlin_interface_port_downto FALSE } \
+    { hdlin_optimize_enum_types FALSE } \
+    { hdlin_preserve_sequential none } \
+    { hdlin_sverilog_std 2012 } \
+    { hdlin_sv_packages dont_chain } \
+    { hdlin_sv_union_member_naming FALSE } \
+    { hdlin_vhdl_std 2008 } \
+    { hdlin_vrlg_std 2005 } \
+    { hdlin_v2005_replication_semantics TRUE } \
+    { hdlin_while_loop_iterations 4096 } \
+    { hdlin_enable_verilog_configurations_canonical TRUE } \
+    { hdlin_enable_verilog_configurations_array_n_block TRUE } \
+    { hdlin_enable_persistent_macros FALSE } \
+    { hdlin_persistent_macros_filename syn_auto_generated_macro_file.sv } \
+    { link_portname_allow_period_to_match_underscore false } \
+    { link_portname_allow_square_bracket_to_match_underscore false } \
+    { port_complement_naming_style %s_BAR } \
+    { simplified_verification_mode FALSE } \
+    { template_naming_style %s_%p } \
+    { template_parameter_style %s%d } \
+    { template_separator_style _ } \
+    { upf_iso_filter_elements_with_applies_to ENABLE } \
+    { upf_isols_allow_instances_in_elements true } \
+    { link_library { /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db /apps/synopsys2017/cafe/SAED/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_min.db /apps/synopsys2017/cafe/SAED/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db } } \
+    { target_library /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db } \
+    { search_path { . /apps/synopsys2022/syn/T-2022.03-SP3/libraries/syn /apps/synopsys2022/syn/T-2022.03-SP3/dw/syn_ver /apps/synopsys2022/syn/T-2022.03-SP3/dw/sim_ver ../../src } } \
+    { synopsys_root /apps/synopsys2022/syn/T-2022.03-SP3 } \
+    { cwd /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/dc-syn } \
+    { analyze { -format sverilog -library WORK ppu.sv } } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+## Operation Id: 2
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 3
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 4
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 5
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_de1 } \
+  -linked { data_extract_v1_N32_es2 } 
+
+## Operation Id: 6
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 7
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 8
+guide_replace \
+  -origin { Presto_aco } \
+  -design { data_extract_v1_N32_es2 } \
+  -type { svfReplacePrestoConditionalAccumulation } \
+  -input { 1 src_1 } \
+  -input { 1 src_2 } \
+  -input { 5 src_3 } \
+  -output { 5 aco_out } \
+  -pre_resource { { 5 } sub_182 = SUB { { src_3 ZERO 5 } { U`b00001 } } } \
+  -pre_resource { { 5 } C85 = SELECT { { src_1 } { src_2 } { sub_182 ZERO 5 } { src_3 ZERO 5 } } } \
+  -pre_assign { aco_out = { C85 ZERO 5 } } \
+  -post_resource { { 5 } sub_182_aco = SUB { { src_3 ZERO 5 } { src_1 ZERO 5 } } } \
+  -post_assign { aco_out = { sub_182_aco ZERO 5 } } 
+
+## Operation Id: 9
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 10
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_abs_regime1 } \
+  -linked { abs_regime_N5 } 
+
+## Operation Id: 11
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 12
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 13
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 14
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_ediff } \
+  -linked { sub_N_N8 } 
+
+## Operation Id: 15
+guide_instance_map \
+  -design { ppu } \
+  -instance { dsr1 } \
+  -linked { DSR_right_N_S_N32_S5 } 
+
+## Operation Id: 16
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_add_sub_N } \
+  -linked { add_sub_N_N32 } 
+
+## Operation Id: 17
+guide_instance_map \
+  -design { ppu } \
+  -instance { l2 } \
+  -linked { LOD_N_N32 } 
+
+## Operation Id: 18
+guide_instance_map \
+  -design { ppu } \
+  -instance { dsl1 } \
+  -linked { DSR_left_N_S_N32_S5 } 
+
+## Operation Id: 19
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_add_mantovf } \
+  -linked { add_1_N8 } 
+
+## Operation Id: 20
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 21
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 22
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 23
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_reg_ro } \
+  -linked { reg_exp_op_es2_Bs5 } 
+
+## Operation Id: 24
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 25
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 26
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 27
+guide_instance_map \
+  -design { ppu } \
+  -instance { dsr2 } \
+  -linked { DSR_right_N_S_N99_S5 } 
+
+## Operation Id: 28
+guide_instance_map \
+  -design { ppu } \
+  -instance { uut_add_ulp } \
+  -linked { add_N_N32 } 
+
+## Operation Id: 29
+guide_instance_map \
+  -design { sub_N_N8 } \
+  -instance { s1 } \
+  -linked { sub_N_in_N8 } 
+
+## Operation Id: 30
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 31
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 32
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 33
+guide_instance_map \
+  -design { add_sub_N_N32 } \
+  -instance { s11 } \
+  -linked { sub_N_N32 } 
+
+## Operation Id: 34
+guide_instance_map \
+  -design { LOD_N_N32 } \
+  -instance { l1 } \
+  -linked { LOD_N32 } 
+
+## Operation Id: 35
+guide_instance_map \
+  -design { reg_exp_op_es2_Bs5 } \
+  -instance { uut_conv_2c1 } \
+  -linked { conv_2c_N7 } 
+
+## Operation Id: 36
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 37
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 38
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 39
+guide_instance_map \
+  -design { add_N_N32 } \
+  -instance { a1 } \
+  -linked { add_N_in_N32 } 
+
+## Operation Id: 40
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 41
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 42
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 43
+guide_instance_map \
+  -design { sub_N_N32 } \
+  -instance { s1 } \
+  -linked { sub_N_in_N32 } 
+
+## Operation Id: 44
+guide_mark \
+  -type { svfMarkTypeBegin } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 45
+guide_info \
+  -version { ../../src/ppu.sv 21.230 } 
+
+## Operation Id: 46
+guide_mark \
+  -type { svfMarkTypeEnd } \
+  -phase { svfMarkPhasePresto } 
+
+## Operation Id: 47
+guide_instance_map \
+  -design { LOD_N32 } \
+  -instance { genblk1.l } \
+  -linked { LOD_N16 } 
+
+## Operation Id: 48
+guide_instance_map \
+  -design { LOD_N16 } \
+  -instance { genblk1.l } \
+  -linked { LOD_N8 } 
+
+## Operation Id: 49
+guide_instance_map \
+  -design { LOD_N8 } \
+  -instance { genblk1.l } \
+  -linked { LOD_N4 } 
+
+## Operation Id: 50
+guide_instance_map \
+  -design { LOD_N4 } \
+  -instance { genblk1.l } \
+  -linked { LOD_N2 } 
+
+## Operation Id: 51
+guide_environment \
+  { { elaborate { -library WORK -architecture verilog ppu } } \
+    { current_design ppu } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+## Operation Id: 52
+guide_uniquify \
+  -design { ppu } \
+  { { uut_de1 data_extract_v1_N32_es2 } \
+    { uut_de1 data_extract_v1_N32_es2 } } 
+
+## Operation Id: 53
+guide_uniquify \
+  -design { ppu } \
+  { { uut_abs_regime1 abs_regime_N5 } \
+    { uut_abs_regime1 abs_regime_N5 } } 
+
+## Operation Id: 54
+guide_uniquify \
+  -design { ppu } \
+  { { uut_ediff sub_N_N8 } \
+    { uut_ediff sub_N_N8 } } 
+
+## Operation Id: 55
+guide_uniquify \
+  -design { ppu } \
+  { { dsr1 DSR_right_N_S_N32_S5 } \
+    { dsr1 DSR_right_N_S_N32_S5 } } 
+
+## Operation Id: 56
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_sub_N add_sub_N_N32 } \
+    { uut_add_sub_N add_sub_N_N32 } } 
+
+## Operation Id: 57
+guide_uniquify \
+  -design { ppu } \
+  { { l2 LOD_N_N32 } \
+    { l2 LOD_N_N32 } } 
+
+## Operation Id: 58
+guide_uniquify \
+  -design { ppu } \
+  { { dsl1 DSR_left_N_S_N32_S5 } \
+    { dsl1 DSR_left_N_S_N32_S5 } } 
+
+## Operation Id: 59
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_mantovf add_1_N8 } \
+    { uut_add_mantovf add_1_N8 } } 
+
+## Operation Id: 60
+guide_uniquify \
+  -design { ppu } \
+  { { uut_reg_ro reg_exp_op_es2_Bs5 } \
+    { uut_reg_ro reg_exp_op_es2_Bs5 } } 
+
+## Operation Id: 61
+guide_uniquify \
+  -design { ppu } \
+  { { dsr2 DSR_right_N_S_N99_S5 } \
+    { dsr2 DSR_right_N_S_N99_S5 } } 
+
+## Operation Id: 62
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_ulp add_N_N32 } \
+    { uut_add_ulp add_N_N32 } } 
+
+## Operation Id: 63
+guide_uniquify \
+  -design { sub_N_N8 } \
+  { { s1 sub_N_in_N8 } \
+    { uut_ediff/s1 sub_N_in_N8 } } 
+
+## Operation Id: 64
+guide_uniquify \
+  -design { add_sub_N_N32 } \
+  { { s11 sub_N_N32 } \
+    { uut_add_sub_N/s11 sub_N_N32 } } 
+
+## Operation Id: 65
+guide_uniquify \
+  -design { LOD_N_N32 } \
+  { { l1 LOD_N32 } \
+    { l2/l1 LOD_N32 } } 
+
+## Operation Id: 66
+guide_uniquify \
+  -design { reg_exp_op_es2_Bs5 } \
+  { { uut_conv_2c1 conv_2c_N7 } \
+    { uut_reg_ro/uut_conv_2c1 conv_2c_N7 } } 
+
+## Operation Id: 67
+guide_uniquify \
+  -design { add_N_N32 } \
+  { { a1 add_N_in_N32 } \
+    { uut_add_ulp/a1 add_N_in_N32 } } 
+
+## Operation Id: 68
+guide_uniquify \
+  -design { sub_N_N32 } \
+  { { s1 sub_N_in_N32 } \
+    { uut_add_sub_N/s11/s1 sub_N_in_N32 } } 
+
+## Operation Id: 69
+guide_uniquify \
+  -design { LOD_N32 } \
+  { { genblk1.l LOD_N16 } \
+    { l2/l1/genblk1.l LOD_N16 } } 
+
+## Operation Id: 70
+guide_uniquify \
+  -design { LOD_N16 } \
+  { { genblk1.l LOD_N8 } \
+    { l2/l1/genblk1.l/genblk1.l LOD_N8 } } 
+
+## Operation Id: 71
+guide_uniquify \
+  -design { LOD_N8 } \
+  { { genblk1.l LOD_N4 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4 } } 
+
+## Operation Id: 72
+guide_uniquify \
+  -design { LOD_N4 } \
+  { { genblk1.l LOD_N2 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2 } } 
+
+## Operation Id: 73
+guide_environment \
+  { { precompile_db_list /apps/synopsys2022/syn/T-2022.03-SP3/libraries/syn/gtech.db } } 
+
+## Operation Id: 74
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_ulp/a1 add_N_in_N32_0 } \
+    { uut_add_sub_N/a11/a1 add_N_in_N32_0 } \
+    { uut_add_ulp add_N_N32_0 } \
+    { uut_add_sub_N/a11 add_N_N32_0 } \
+    { uut_ediff/s1 sub_N_in_N8_0 } \
+    { sub3/s1 sub_N_in_N8_0 } \
+    { uut_ediff sub_N_N8_0 } \
+    { sub3 sub_N_N8_0 } \
+    { dsl1 DSR_left_N_S_N32_S5_0 } \
+    { uut_de1/ls DSR_left_N_S_N32_S5_0 } \
+    { uut_de2/ls DSR_left_N_S_N32_S5_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4_0 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_0 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_0 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_0 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_0 } \
+    { l2/l1/genblk1.l/genblk1.l LOD_N8_0 } \
+    { l2/l1/genblk1.l/genblk1.h LOD_N8_0 } \
+    { l2/l1/genblk1.h/genblk1.l LOD_N8_0 } \
+    { l2/l1/genblk1.h/genblk1.h LOD_N8_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l LOD_N8_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h LOD_N8_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l LOD_N8_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h LOD_N8_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l LOD_N8_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h LOD_N8_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l LOD_N8_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h LOD_N8_0 } \
+    { l2/l1/genblk1.l LOD_N16_0 } \
+    { l2/l1/genblk1.h LOD_N16_0 } \
+    { uut_de1/xinst_k/l1/genblk1.l LOD_N16_0 } \
+    { uut_de1/xinst_k/l1/genblk1.h LOD_N16_0 } \
+    { uut_de2/xinst_k/l1/genblk1.l LOD_N16_0 } \
+    { uut_de2/xinst_k/l1/genblk1.h LOD_N16_0 } \
+    { l2/l1 LOD_N32_0 } \
+    { uut_de1/xinst_k/l1 LOD_N32_0 } \
+    { uut_de2/xinst_k/l1 LOD_N32_0 } \
+    { l2 LOD_N_N32_0 } \
+    { uut_de1/xinst_k LOD_N_N32_0 } \
+    { uut_de2/xinst_k LOD_N_N32_0 } \
+    { uut_abs_regime1 abs_regime_N5_0 } \
+    { uut_abs_regime2 abs_regime_N5_0 } \
+    { uut_de1 data_extract_v1_N32_es2_0 } \
+    { uut_de2 data_extract_v1_N32_es2_0 } } 
+
+## Operation Id: 75
+guide_transformation \
+  -design { add_N_in_N32_0 } \
+  -type { map } \
+  -input { 33 src1 } \
+  -input { 33 src2 } \
+  -output { 33 src3 } \
+  -pre_resource { { 33 } add_230 = UADD { { src1 } { src2 } } } \
+  -pre_assign { src3 = { add_230.out.1 } } \
+  -post_resource { { 33 } add_230 = ADD { { src1 } { src2 } } } \
+  -post_assign { src3 = { add_230.out.1 } } 
+
+## Operation Id: 76
+guide_transformation \
+  -design { conv_2c_N7 } \
+  -type { map } \
+  -input { 8 src15 } \
+  -output { 8 src17 } \
+  -pre_resource { { 8 } add_274 = UADD { { src15 } { `b00000001 } } } \
+  -pre_assign { src17 = { add_274.out.1 } } \
+  -post_resource { { 8 } add_274 = ADD { { src15 } { `b00000001 } } } \
+  -post_assign { src17 = { add_274.out.1 } } 
+
+## Operation Id: 77
+guide_transformation \
+  -design { reg_exp_op_es2_Bs5 } \
+  -type { map } \
+  -input { 5 src18 } \
+  -output { 5 src20 } \
+  -pre_resource { { 5 } add_290 = UADD { { src18 } { `b00001 } } } \
+  -pre_assign { src20 = { add_290.out.1 } } \
+  -post_resource { { 5 } add_290 = ADD { { src18 } { `b00001 } } } \
+  -post_assign { src20 = { add_290.out.1 } } 
+
+## Operation Id: 78
+guide_transformation \
+  -design { add_1_N8 } \
+  -type { map } \
+  -input { 9 src25 } \
+  -input { 1 src26 } \
+  -output { 9 src27 } \
+  -pre_resource { { 9 } add_255 = UADD { { src25 } { src26 ZERO 9 } } } \
+  -pre_assign { src27 = { add_255.out.1 } } \
+  -post_resource { { 9 } add_255 = ADD { { src25 } { src26 ZERO 9 } } } \
+  -post_assign { src27 = { add_255.out.1 } } 
+
+## Operation Id: 79
+guide_transformation \
+  -design { sub_N_in_N8_0 } \
+  -type { map } \
+  -input { 9 src28 } \
+  -input { 9 src29 } \
+  -output { 9 src30 } \
+  -pre_resource { { 9 } sub_221 = USUB { { src28 } { src29 } } } \
+  -pre_assign { src30 = { sub_221.out.1 } } \
+  -post_resource { { 9 } sub_221 = SUB { { src28 } { src29 } } } \
+  -post_assign { src30 = { sub_221.out.1 } } 
+
+## Operation Id: 80
+guide_transformation \
+  -design { sub_N_in_N32 } \
+  -type { map } \
+  -input { 33 src54 } \
+  -input { 33 src55 } \
+  -output { 33 src56 } \
+  -pre_resource { { 33 } sub_221 = USUB { { src54 } { src55 } } } \
+  -pre_assign { src56 = { sub_221.out.1 } } \
+  -post_resource { { 33 } sub_221 = SUB { { src54 } { src55 } } } \
+  -post_assign { src56 = { sub_221.out.1 } } 
+
+## Operation Id: 81
+guide_transformation \
+  -design { abs_regime_N5_0 } \
+  -type { map } \
+  -input { 5 src72 } \
+  -output { 6 src73 } \
+  -pre_resource { { 6 } sub_265 = USUB { { `b000000 } { src72 ZERO 6 } } } \
+  -pre_assign { src73 = { sub_265.out.1 } } \
+  -post_resource { { 6 } sub_265 = SUB { { `b000000 } { src72 ZERO 6 } } } \
+  -post_assign { src73 = { sub_265.out.1 } } 
+
+## Operation Id: 82
+guide_transformation \
+  -design { data_extract_v1_N32_es2_0 } \
+  -type { map } \
+  -input { 5 src76 } \
+  -input { 1 src77 } \
+  -output { 5 src78 } \
+  -pre_resource { { 5 } sub_182_aco = USUB { { src76 } { src77 ZERO 5 } } } \
+  -pre_assign { src78 = { sub_182_aco.out.1 } } \
+  -post_resource { { 5 } sub_182_aco = SUB { { src76 } { src77 ZERO 5 } } } \
+  -post_assign { src78 = { sub_182_aco.out.1 } } 
+
+## Operation Id: 83
+guide_transformation \
+  -design { ppu } \
+  -type { map } \
+  -input { 32 src83 } \
+  -output { 32 src84 } \
+  -pre_resource { { 32 } sub_51 = USUB { { `b00000000000000000000000000000000 } { src83 } } } \
+  -pre_assign { src84 = { sub_51.out.1 } } \
+  -post_resource { { 32 } sub_51 = SUB { { `b00000000000000000000000000000000 } { src83 } } } \
+  -post_assign { src84 = { sub_51.out.1 } } 
+
+## Operation Id: 84
+guide_transformation \
+  -design { ppu } \
+  -type { map } \
+  -input { 32 src85 } \
+  -output { 32 src86 } \
+  -pre_resource { { 32 } sub_52 = USUB { { `b00000000000000000000000000000000 } { src85 } } } \
+  -pre_assign { src86 = { sub_52.out.1 } } \
+  -post_resource { { 32 } sub_52 = SUB { { `b00000000000000000000000000000000 } { src85 } } } \
+  -post_assign { src86 = { sub_52.out.1 } } 
+
+## Operation Id: 85
+guide_transformation \
+  -design { ppu } \
+  -type { map } \
+  -input { 31 src87 } \
+  -input { 31 src88 } \
+  -output { 1 src89 } \
+  -pre_resource { { 1 } gte_60 = UGTE { { src87 } { src88 } } } \
+  -pre_assign { src89 = { gte_60.out.1 } } \
+  -post_resource { { 1 0 } gte_60 = CMP2A { { src88 } { src87 } { 0 } { 1 } } } \
+  -post_assign { src89 = { gte_60.out.1 } } 
+
+## Operation Id: 86
+guide_transformation \
+  -design { ppu } \
+  -type { map } \
+  -input { 5 src90 } \
+  -output { 1 src92 } \
+  -pre_resource { { 1 } lt_155 = ULT { { src90 } { `b11100 } } } \
+  -pre_assign { src92 = { lt_155.out.1 } } \
+  -post_resource { { 1 0 } lt_155 = CMP2A { { src90 } { `b11100 } { 0 } { 0 } } } \
+  -post_assign { src92 = { lt_155.out.1 } } 
+
+## Operation Id: 87
+guide_transformation \
+  -design { ppu } \
+  -type { map } \
+  -input { 32 src93 } \
+  -output { 32 src94 } \
+  -pre_resource { { 32 } sub_159 = USUB { { `b00000000000000000000000000000000 } { src93 } } } \
+  -pre_assign { src94 = { sub_159.out.1 } } \
+  -post_resource { { 32 } sub_159 = SUB { { `b00000000000000000000000000000000 } { src93 } } } \
+  -post_assign { src94 = { sub_159.out.1 } } 
+
+## Operation Id: 88
+guide_uniquify \
+  -design { ppu } \
+  { { uut_de2 data_extract_v1_N32_es2_1 } \
+    { uut_abs_regime2 abs_regime_N5_1 } \
+    { sub3 sub_N_N8_1 } \
+    { uut_de2/xinst_k LOD_N_N32_1 } \
+    { uut_de1/xinst_k LOD_N_N32_2 } \
+    { uut_de2/ls DSR_left_N_S_N32_S5_1 } \
+    { uut_de1/ls DSR_left_N_S_N32_S5_2 } \
+    { uut_add_sub_N/a11 add_N_N32_1 } \
+    { sub3/s1 sub_N_in_N8_1 } \
+    { uut_de2/xinst_k/l1 LOD_N32_1 } \
+    { uut_de1/xinst_k/l1 LOD_N32_2 } \
+    { uut_add_sub_N/a11/a1 add_N_in_N32_1 } \
+    { uut_de2/xinst_k/l1/genblk1.h LOD_N16_1 } \
+    { uut_de2/xinst_k/l1/genblk1.l LOD_N16_2 } \
+    { uut_de1/xinst_k/l1/genblk1.h LOD_N16_3 } \
+    { uut_de1/xinst_k/l1/genblk1.l LOD_N16_4 } \
+    { l2/l1/genblk1.h LOD_N16_5 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h LOD_N8_1 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l LOD_N8_2 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h LOD_N8_3 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l LOD_N8_4 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h LOD_N8_5 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l LOD_N8_6 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h LOD_N8_7 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l LOD_N8_8 } \
+    { l2/l1/genblk1.h/genblk1.h LOD_N8_9 } \
+    { l2/l1/genblk1.h/genblk1.l LOD_N8_10 } \
+    { l2/l1/genblk1.l/genblk1.h LOD_N8_11 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_1 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_2 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_3 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_4 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_5 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_6 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_7 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4_8 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_9 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_10 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_11 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_12 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_13 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_14 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_15 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l LOD_N4_16 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h LOD_N4_17 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l LOD_N4_18 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h LOD_N4_19 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l LOD_N4_20 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h LOD_N4_21 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l LOD_N4_22 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h LOD_N4_23 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_1 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_2 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_3 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_4 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_5 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_6 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_7 } \
+    { uut_de2/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_8 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_9 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_10 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_11 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_12 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_13 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_14 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_15 } \
+    { uut_de2/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2_16 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_17 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_18 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_19 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_20 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_21 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_22 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_23 } \
+    { uut_de1/xinst_k/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_24 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_25 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_26 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_27 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_28 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_29 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_30 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_31 } \
+    { uut_de1/xinst_k/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l LOD_N2_32 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.h LOD_N2_33 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.h/genblk1.l LOD_N2_34 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.h LOD_N2_35 } \
+    { l2/l1/genblk1.h/genblk1.h/genblk1.l/genblk1.l LOD_N2_36 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.h LOD_N2_37 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.h/genblk1.l LOD_N2_38 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.h LOD_N2_39 } \
+    { l2/l1/genblk1.h/genblk1.l/genblk1.l/genblk1.l LOD_N2_40 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.h LOD_N2_41 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.h/genblk1.l LOD_N2_42 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.h LOD_N2_43 } \
+    { l2/l1/genblk1.l/genblk1.h/genblk1.l/genblk1.l LOD_N2_44 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.h LOD_N2_45 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.h/genblk1.l LOD_N2_46 } \
+    { l2/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.h LOD_N2_47 } } 
+
+## Operation Id: 89
+guide_uniquify \
+  -design { ppu } \
+  { { sub_159 ppu_DW01_sub_0 } } 
+
+## Operation Id: 90
+guide_uniquify \
+  -design { ppu } \
+  { { lt_155 ppu_DW01_cmp2_0 } } 
+
+## Operation Id: 91
+guide_uniquify \
+  -design { ppu } \
+  { { gte_60 ppu_DW01_cmp2_1 } } 
+
+## Operation Id: 92
+guide_uniquify \
+  -design { ppu } \
+  { { sub_52 ppu_DW01_sub_1 } } 
+
+## Operation Id: 93
+guide_uniquify \
+  -design { ppu } \
+  { { sub_51 ppu_DW01_sub_2 } } 
+
+## Operation Id: 94
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_ulp/a1/add_230 add_N_in_N32_0_DW01_add_0 } } 
+
+## Operation Id: 95
+guide_uniquify \
+  -design { ppu } \
+  { { uut_reg_ro/add_290 reg_exp_op_es2_Bs5_DW01_inc_0 } } 
+
+## Operation Id: 96
+guide_uniquify \
+  -design { ppu } \
+  { { uut_reg_ro/uut_conv_2c1/add_274 conv_2c_N7_DW01_inc_0_DW01_inc_1 } } 
+
+## Operation Id: 97
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_mantovf/add_255 add_1_N8_DW01_add_0_DW01_add_1 } } 
+
+## Operation Id: 98
+guide_uniquify \
+  -design { ppu } \
+  { { sub3/s1/sub_221 sub_N_in_N8_1_DW01_sub_0_DW01_sub_3 } } 
+
+## Operation Id: 99
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_sub_N/s11/s1/sub_221 sub_N_in_N32_DW01_sub_0_DW01_sub_4 } } 
+
+## Operation Id: 100
+guide_uniquify \
+  -design { ppu } \
+  { { uut_add_sub_N/a11/a1/add_230 add_N_in_N32_1_DW01_add_0_DW01_add_2 } } 
+
+## Operation Id: 101
+guide_uniquify \
+  -design { ppu } \
+  { { uut_ediff/s1/sub_221 sub_N_in_N8_0_DW01_sub_0_DW01_sub_5 } } 
+
+## Operation Id: 102
+guide_uniquify \
+  -design { ppu } \
+  { { uut_abs_regime2/sub_265 abs_regime_N5_1_DW01_sub_0_DW01_sub_6 } } 
+
+## Operation Id: 103
+guide_uniquify \
+  -design { ppu } \
+  { { uut_abs_regime1/sub_265 abs_regime_N5_0_DW01_sub_0_DW01_sub_7 } } 
+
+## Operation Id: 104
+guide_uniquify \
+  -design { ppu } \
+  { { uut_de2/sub_182_aco data_extract_v1_N32_es2_1_DW01_sub_0_DW01_sub_8 } } 
+
+## Operation Id: 105
+guide_uniquify \
+  -design { ppu } \
+  { { uut_de1/sub_182_aco data_extract_v1_N32_es2_0_DW01_sub_0_DW01_sub_9 } } 
+
+## Operation Id: 106
+guide_environment \
+  { { postcompile_db_list /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db } } 
+
+setup
+

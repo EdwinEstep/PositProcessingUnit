@@ -1,0 +1,20 @@
+
+Name of design : ppu
+Number of cell instance masters in the library : 38
+Number of cell instances in the design : 2459
+Processing net VDD ...
+Average power dissipation in ppu :  1000.00 mW
+Power supply voltage :     1.20 V
+Average current in ppu :   833.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 108
+Maximum IR drop in ppu : 88.43 mV
+Maximum current in ppu : 21.349 mA
+Processing net VSS ...
+Average power dissipation in ppu :  1000.00 mW
+Power supply voltage :     1.20 V
+Average current in ppu :   833.33 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 108
+Maximum IR drop in ppu : 87.78 mV
+Maximum current in ppu : 21.345 mA
+Memory usage for design data :      37658.624 Kbytes
+Overall takes     0.33 seconds

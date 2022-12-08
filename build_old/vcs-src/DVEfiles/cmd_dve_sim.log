@@ -1,0 +1,26 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/vcs-src/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpRFZNRO
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06-1_Full64" -sync_file /tmp/vcs_dve_rpc.ece0004.64095}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.ece0004.64095}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+ucliGUI::getSignalValues -scope tb_ppu -radix {hexadecimal } -list {{in2[4:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

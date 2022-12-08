@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1670467159.740549838, "rt":0.41, "ut":0.20, "st":0.13}}
+{"vcselab":{"timestamp_begin":1670467160.228430634, "rt":0.30, "ut":0.20, "st":0.10}}
+{"link":{"timestamp_begin":1670467160.587798776, "rt":0.14, "ut":0.06, "st":0.09}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1670467159.343895841}
+{"VCS_COMP_START_TIME": 1670467159.343895841}
+{"VCS_COMP_END_TIME": 1670467160.871002130}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_all ../../tb/tb_ppu.sv ../../src/ppu.sv -o ppu_presyn.simv"}
+{"vcs1": {"peak_mem": 325368}}
+{"stitch_vcselab": {"peak_mem": 218224}}

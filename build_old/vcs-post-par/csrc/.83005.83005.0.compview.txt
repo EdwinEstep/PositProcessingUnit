@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1670470490.204380440, "rt":4.16, "ut":3.66, "st":0.49}}
+{"vcselab":{"timestamp_begin":1670470494.450506665, "rt":0.85, "ut":0.71, "st":0.14}}
+{"link":{"timestamp_begin":1670470495.366918763, "rt":0.29, "ut":0.10, "st":0.19}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1670470489.794705714}
+{"VCS_COMP_START_TIME": 1670470489.794705714}
+{"VCS_COMP_END_TIME": 1670470495.796996246}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_all /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/verilog/saed90nm.v tb_ppu32.sv ../icc-par/ppu_par.sv -o ppu_postsyn.simv"}
+{"vcs1": {"peak_mem": 358424}}
+{"stitch_vcselab": {"peak_mem": 235972}}

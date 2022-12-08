@@ -1,0 +1,160 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/student/ece0004/Documents/cpe527/l2a3/session.inter.vpd.tcl} {gui_load_session -ignore_errors -file /home/student/ece0004/Documents/cpe527/vcs_tut/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1800
+gui_set_state_value -category Layout -key child_console_size_y -value 346
+gui_set_state_value -category Layout -key child_data_coltype -value 93
+gui_set_state_value -category Layout -key child_data_colvalue -value 123
+gui_set_state_value -category Layout -key child_data_colvariable -value 164
+gui_set_state_value -category Layout -key child_data_size_x -value 391
+gui_set_state_value -category Layout -key child_data_size_y -value 690
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 171
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 107
+gui_set_state_value -category Layout -key child_hier_size_x -value 259
+gui_set_state_value -category Layout -key child_hier_size_y -value 690
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1199
+gui_set_state_value -category Layout -key child_schematic_size_y -value 857
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1153
+gui_set_state_value -category Layout -key child_source_size_y -value 685
+gui_set_state_value -category Layout -key child_wave_colname -value 250
+gui_set_state_value -category Layout -key child_wave_colvalue -value 250
+gui_set_state_value -category Layout -key child_wave_left -value 504
+gui_set_state_value -category Layout -key child_wave_right -value 1230
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 1808
+gui_set_state_value -category Layout -key main_size_y -value 1166
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1744
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 866
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 48
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 106
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1787
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1076
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox|textfilter -value_type string -value {counter_reg_0_ counter {} counter_reg_}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui } {-V} {-ucligui -V {}}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/vcs-post-syn /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/vcs-src /home/student/ece0004/Documents/cpe527/multiplier/build/vcs-src /home/student/ece0004/Documents/cpe527/l2a3 /home/student/ece0004/Documents/cpe527/l2a3/tb}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/vcs-src/ppu_presyn.simv ./ppu_presyn.simv ./ps_simv.vsim ./../../tb/ps_simv.vsim}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./ppu_postsyn.simv -args {-ucligui  } -dir .
+gui_list_select_all -id Hier.1
+gui_list_select -id Hier.1 -current_item_name AND2X2 -current_item_type Scope  { AND2X2  tb_ppu  AND2X2  AND2X4  AND3X4  AND4X1  AND4X2  AND4X4  ANTENNA  AO21X2  AO22X2  AO222X2  AOBUFX1  AOBUFX2  AOBUFX4  AODFFARX1  AODFFARX2  AODFFNARX1  AODFFNARX2  AOI21X2  AOI22X2  AOI221X1  AOI221X2  AOI222X2  AOINVX1  AOINVX2  AOINVX4  BSLEX1  BSLEX2  BSLEX4  BUSKP  CGLNPRX2  CGLNPRX8  CGLNPSX2  CGLNPSX4  CGLNPSX8  CGLNPSX16  CGLPPRX2  CGLPPRX8  CGLPPSX2  CGLPPSX4  CGLPPSX8  CGLPPSX16  CLOAD1  DCAP  DEC24X1  DEC24X2  DELLN1X2  DELLN2X2  DELLN3X2  DFFARX1  DFFARX2  DFFASRX1  DFFASRX2  DFFASX1  DFFASX2  DFFNARX1  DFFNARX2  DFFNASRNX1  DFFNASRNX2  DFFNASRQX1  DFFNASRQX2  DFFNASRX1  DFFNASRX2  DFFNASX1  DFFNASX2  DFFNX1  DFFNX2  DFFSSRX1  DFFSSRX2  DFFX1  DFFX2  DHFILLHLH2  DHFILLHLHLS11  DHFILLLHL2  FADDX2  HADDX2  HEAD2X2  HEAD2X4  HEAD2X8  HEAD2X16  HEAD2X32  HEADX2  HEADX4  HEADX8  HEADX16  HEADX32  IBUFFX2  IBUFFX4  IBUFFX8  IBUFFX16  IBUFFX32  INVX8  INVX16  INVX32  ISOLANDAOX1  ISOLANDAOX2  ISOLANDAOX4  ISOLANDAOX8  ISOLANDX1  ISOLANDX2  ISOLANDX4  ISOLANDX8  ISOLORAOX1  ISOLORAOX2  ISOLORAOX4  ISOLORAOX8  ISOLORX1  ISOLORX2  ISOLORX4  ISOLORX8  LARX1  LARX2  LASRNX1  LASRNX2  LASRQX1  LASRQX2  LASRX1  LASRX2  LASX1  LASX2  LATCHX1  LATCHX2  LNANDX1  LNANDX2  LSDNENCLSSX1  LSDNENCLSSX2  LSDNENCLSSX4  LSDNENCLSSX8  LSDNENCLX1  LSDNENCLX2  LSDNENCLX4  LSDNENCLX8  LSDNENSSX1  LSDNENSSX2  LSDNENSSX4  LSDNENSSX8  LSDNENX1  LSDNENX2  LSDNENX4  LSDNENX8  LSDNSSX1  LSDNSSX2  LSDNSSX4  LSDNSSX8  LSDNX1  LSDNX2  LSDNX4  LSDNX8  LSUPENCLX1  LSUPENCLX2  LSUPENCLX4  LSUPENCLX8  LSUPENX1  LSUPENX2  LSUPENX4  LSUPENX8  LSUPX1  LSUPX2  LSUPX4  LSUPX8  MUX21X2  MUX41X1  MUX41X2  NAND2X2  NAND2X4  NAND3X1  NAND3X2  NAND3X4  NAND4X1  NBUFFX4  NBUFFX8  NBUFFX16  NBUFFX32  NMT1  NMT2  NMT3  NOR2X1  NOR2X4  NOR3X1  NOR3X2  NOR3X4  NOR4X1  OA21X2  OA22X2  OA221X2  OA222X1  OA222X2  OAI21X1  OAI21X2  OAI22X1  OAI22X2  OAI221X1  OAI221X2  OAI222X1  OAI222X2  OR2X2  OR2X4  OR3X2  OR3X4  OR4X2  OR4X4  PGX1  PGX2  PGX4  PMT1  PMT2  PMT3  RDFFARX1  RDFFARX2  RDFFNARX1  RDFFNARX2  RDFFNSRARX1  RDFFNSRARX2  RDFFNSRASRNX1  RDFFNSRASRNX2  RDFFNSRASRQX1  RDFFNSRASRQX2  RDFFNSRASRX1  RDFFNSRASRX2  RDFFNSRASX1  RDFFNSRASX2  RDFFNSRX1  RDFFNSRX2  RDFFNX1  RDFFNX2  RDFFSRARX1  RDFFSRARX2  RDFFSRASRX1  RDFFSRASRX2  RDFFSRASX1  RDFFSRASX2  RDFFSRSSRX1  RDFFSRSSRX2  RDFFSRX1  RDFFSRX2  RDFFX1  RDFFX2  RSDFFARX1  RSDFFARX2  RSDFFNARX1  RSDFFNARX2  RSDFFNSRARX1  RSDFFNSRARX2  RSDFFNSRASRNX1  RSDFFNSRASRNX2  RSDFFNSRASRQX1  RSDFFNSRASRQX2  RSDFFNSRASRX1  RSDFFNSRASRX2  RSDFFNSRASX1  RSDFFNSRASX2  RSDFFNSRX1  RSDFFNSRX2  RSDFFNX1  RSDFFNX2  RSDFFSRARX1  RSDFFSRARX2  RSDFFSRASRX1  RSDFFSRASRX2  RSDFFSRASX1  RSDFFSRASX2  RSDFFSRSSRX1  RSDFFSRSSRX2  RSDFFSRX1  RSDFFSRX2  RSDFFX1  RSDFFX2  SDFFARX1  SDFFARX2  SDFFASRSX1  SDFFASRSX2  SDFFASRX1  SDFFASRX2  SDFFASX1  SDFFASX2  SDFFNARX1  SDFFNARX2  SDFFNASRX1  SDFFNASRX2  SDFFNASX1  SDFFNASX2  SDFFNX1  SDFFNX2  SDFFSSRX1  SDFFSSRX2  SDFFX1  SDFFX2  SHFILL1  SHFILL2  SHFILL3  SHFILL64  SHFILL128  TIEH  TIEL  TNBUFFX1  TNBUFFX2  TNBUFFX4  TNBUFFX8  TNBUFFX16  TNBUFFX32  XNOR2X2  XNOR3X1  XNOR3X2  XOR3X2   }
+gui_list_select -id Hier.1 -current_item_name tb_ppu -current_item_type Scope  -selected  { tb_ppu   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {tb_ppu.in1[31:0]} {tb_ppu.in2[31:0]} tb_ppu.start {tb_ppu.out[31:0]} tb_ppu.clk {tb_ppu.outfile[31:0]} {tb_ppu.i[15:0]} {tb_ppu.diff[31:0]} {tb_ppu.data1[1:256][31:0]} {tb_ppu.data2[1:256][31:0]} {tb_ppu.result[1:256][31:0]} tb_ppu.inf tb_ppu.zero {tb_ppu.N[31:0]} {tb_ppu.es[31:0]} } -insertionbar
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 25819607
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 177050
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 176516
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 353622
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 775908
+gui_marker_move -id  Wave.1 C1 765499
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 765000
+gui_marker_move -id  Wave.1 C1 765000
+gui_marker_move -id  Wave.1 C1 760669
+gui_list_select -id Wave.1 -selected  { tb_ppu.start   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.out[31:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_ppu.clk   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.outfile[31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.i[15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.diff[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_ppu.data1[1:256][31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.data2[1:256][31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.result[1:256][31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_ppu.diff[31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.result[1:256][31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_ppu.inf   }
+gui_list_select -id Wave.1 -selected  { {tb_ppu.N[31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_ppu.es[31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_ppu.zero   }
+gui_marker_move -id  Wave.1 C1 757748
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_select -id  Wave.1 { C1 }
+gui_zoom -window Wave.1 -factor 2

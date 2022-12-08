@@ -1,0 +1,85 @@
+ 
+****************************************
+Report : reference
+Design : ppu
+Version: T-2022.03-SP3
+Date   : Wed Dec  7 20:52:08 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_max
+                                  7.372800       4     29.491199  
+AND3X2             saed90nm_max
+                                 10.137600       1     10.137600  
+AO22X1             saed90nm_max
+                                 11.980800      31    371.404790  
+AO221X1            saed90nm_max
+                                 12.902400      13    167.731200  
+AO222X1            saed90nm_max
+                                 14.745600       1     14.745600  
+AOI21X1            saed90nm_max
+                                 11.980800       1     11.980800  
+AOI22X1            saed90nm_max
+                                 12.902400       1     12.902400  
+DSR_left_N_S_N32_S5_0          1663.487984       1   1663.487984  h
+DSR_right_N_S_N32_S5           1661.644784       1   1661.644784  h
+DSR_right_N_S_N99_S5           5904.691160       1   5904.691160  h
+INVX0              saed90nm_max
+                                  5.529600      37    204.595205  
+INVX1              saed90nm_max
+                                  6.451200       2     12.902400  
+INVX2              saed90nm_max
+                                  6.451200       1      6.451200  
+LOD_N_N32_0                     858.931212       1    858.931212  h
+MUX21X1            saed90nm_max
+                                 11.059200     204   2256.076859  
+NAND2X0            saed90nm_max
+                                  5.529600       2     11.059200  
+NAND4X0            saed90nm_max
+                                  8.294400       4     33.177601  
+NBUFFX2            saed90nm_max
+                                  5.529600       5     27.648001  
+NOR4X0             saed90nm_max
+                                  9.216000      17    156.671993  
+OA21X1             saed90nm_max
+                                  9.216000       2     18.431999  
+OA22X1             saed90nm_max
+                                 11.059200       1     11.059200  
+OA221X1            saed90nm_max
+                                 12.902400      15    193.536000  
+OR2X1              saed90nm_max
+                                  7.372800      11     81.100799  
+OR3X1              saed90nm_max
+                                  9.216000       1      9.216000  
+OR4X1              saed90nm_max
+                                 10.137600      10    101.375999  
+XOR2X2             saed90nm_max
+                                 15.667200       1     15.667200  
+abs_regime_N5_0                 121.651202       1    121.651202  h
+abs_regime_N5_1                 119.808002       1    119.808002  h
+add_1_N8                        172.339204       1    172.339204  h
+add_N_N32_0                     935.423985       1    935.423985  h
+add_sub_N_N32                  2460.671985       1   2460.671985  h
+data_extract_v1_N32_es2_0      3038.515209       1   3038.515209  h
+data_extract_v1_N32_es2_1      3038.515209       1   3038.515209  h
+ppu_DW01_sub_0                  819.302412       1    819.302412  h
+ppu_DW01_sub_1                  819.302412       1    819.302412  h
+ppu_DW01_sub_2                  819.302412       1    819.302412  h
+reg_exp_op_es2_Bs5              323.481606       1    323.481606  h
+sub_N_N8_0                      270.028798       1    270.028798  h
+sub_N_N8_1                      262.655999       1    262.655999  h
+-----------------------------------------------------------------------------
+Total 39 references                                 27047.116820
+1

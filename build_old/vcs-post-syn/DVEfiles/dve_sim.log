@@ -1,0 +1,34 @@
+21:23:05    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./ppu_postsyn.simv -pid 74512 -toolin /tmp/vcs_20221208032258_74511_ece0004..stdin -toolout /tmp/vcs_20221208032258_74511_ece0004..stdout  
+21:23:05    17 -->                                                                 [tcl] set ucliGUI::state
+21:23:05    18 -->                                                                     [tcl] set ucliGUI::state
+21:23:05    19 -->                                                                         [tcl] ucliCore::getToolPID
+21:23:05    20 -->                                                                             [tcl] synopsys::env hasTB
+21:23:05    21 -->                                                                                 [tcl] trigger_hier_stack_context_switch 0
+21:23:05    22 -->                                                                                     [tcl] synUtils::setDVEInitPhase 1
+21:23:05    23 -->                                                                                         [tcl] gui_get_env SIMSETUP::SIMVPD
+21:23:05    24 -->                                                                                             [tcl] synopsys::dump -type VPD -file /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/vcs-post-syn/inter.vpd -locking
+21:23:05    25 --> ...  [tcl] synopsys::dump -autoflush on -fid VPD0
+21:23:05    26 --> ...      [tcl] set ::dve_fid VPD0
+21:23:05    27 --> ...          [tcl] synUtils::setDVEInitPhase 0
+21:23:05    28 --> ...              [tcl] ucliCore::getToolPID
+21:23:05    29 --> ...                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp7i1wfA
+21:23:05    30 --> ...                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06-1_Full64" -sync_file /tmp/vcs_dve_rpc.ece0004.74512}
+21:23:07    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.ece0004.74512}
+21:23:07    32 --> ...                              [tcl] dveMisc::vbusExpand AND2X2
+21:23:07    33 --> ...                                  [tcl] config endofsim noexit
+21:23:07    34 --> ...                                      [tcl] config onfail enable all
+21:23:07    35 --> ...                                          [tcl] config syscaddplainmembers
+21:23:07    36 --> ...                                              [tcl] config syscaddsourcenames
+21:23:07    37 --> ...                                                  [tcl] config syscaddstructtypes
+21:23:07    38 --> ...                                                      [tcl] synopsys::listing -disable
+21:23:22    39 --> ...                                                          [tcl] dveMisc::vbusExpand tb_ppu
+21:23:28    40 --> ...                                                              [tcl] synopsys::dump -add {tb_ppu.N tb_ppu.clk tb_ppu.data1 tb_ppu.data2 tb_ppu.diff tb_ppu.es tb_ppu.i tb_ppu.in1 tb_ppu.in2 tb_ppu.inf tb_ppu.out tb_ppu.outfile tb_ppu.result tb_ppu.start tb_ppu.zero } -aggregates  -fid VPD0
+21:23:31    41 --> ...                                                                  [tcl] synopsys::run
+21:23:31    42 --> ...                                                                      [tcl] set ucliGUI::state
+21:23:31    43 --> ...                                                                          [tcl] gui_update_simulator_buttons
+21:23:31    44 --> ...                                                                              [tcl] set ucliGUI::state
+21:23:31    45 --> ...                                                                                  [tcl] set ucliGUI::state
+21:23:31    46 --> ...                                                                                      [tcl] set ucliGUI::state
+21:23:31    47 --> ...                                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+21:23:31    48 --> ...                                                                                              [tcl] set dveMisc::result
+21:23:31    49 --> ...                                                                                                  [tcl] gui_update_simulator_buttons

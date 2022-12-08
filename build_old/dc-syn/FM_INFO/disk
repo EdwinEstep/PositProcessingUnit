@@ -1,0 +1,10 @@
+Directory = /home/student/ece0004/Documents/cpe527/PositProcessingUnit/build/dc-syn
+Total     = 6001 GB
+Available = 3536 GB
+Used      = 2465 GB (42%)
+
+Directory = /tmp
+Total     = 1000 GB
+Available = 493 GB
+Used      = 507 GB (51%)
+

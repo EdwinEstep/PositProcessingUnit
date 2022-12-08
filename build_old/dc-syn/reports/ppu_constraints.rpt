@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+Design : ppu
+Version: T-2022.03-SP3
+Date   : Wed Dec  7 20:52:08 2022
+****************************************
+
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    min_capacitance                                  0.00 (MET)
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  0.00 (MET)
+    max_area                                     29532.79 (VIOLATED)
+
+
+1

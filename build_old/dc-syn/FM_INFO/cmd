@@ -1,0 +1,6 @@
+/apps/synopsys2022/fm/T-2022.03-SP4/linux64/fm/bin/fm_shell_exec -r /apps/synopsys2022/fm/T-2022.03-SP4 -f ppu_run-formality.tcl 
+
+Version    = T-2022.03-SP4
+Build      = T-2022.03-SP4-formality_t2022.03_sp4_rel-7777987
+Build date = Aug 29, 2022
+Run date   = Wed Dec  7 20:54:23 2022 CST

@@ -1,0 +1,7 @@
+set_object_boundary -boundary {  { 165.0400 155.2800 } { 201.8400 155.2800 } { 201.8400 83.2800 } { 165.0400 83.2800 } } [get_plan_groups { dsr1 } ]
+set_object_boundary -boundary {  { 120.5600 83.2800 } { 201.8400 83.2800 } { 201.8400 31.4400 } { 120.5600 31.4400 } } [get_plan_groups { uut_add_sub_N } ]
+set_object_boundary -boundary {  { 78.6400 97.6800 } { 120.5600 97.6800 } { 120.5600 31.4400 } { 78.6400 31.4400 } } [get_plan_groups { dsl1 } ]
+set_object_boundary -boundary {  { 120.5600 238.8000 } { 182.6400 238.8000 } { 182.6400 155.2800 } { 120.5600 155.2800 } } [get_plan_groups { uut_de1 } ]
+set_object_boundary -boundary {  { 201.8400 155.2800 } { 242.1600 155.2800 } { 242.1600 31.4400 } { 201.8400 31.4400 } } [get_plan_groups { uut_de2 } ]
+set_object_boundary -boundary {  { 30.0000 238.8000 } { 120.5600 238.8000 } { 120.5600 132.2400 } { 30.0000 132.2400 } } [get_plan_groups { dsr2 } ]
+

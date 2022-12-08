@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1670466828.509058063, "rt":0.11, "ut":0.06, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1670466828.191509919}
+{"VCS_COMP_START_TIME": 1670466828.191509919}
+{"VCS_COMP_END_TIME": 1670466828.696261878}
+{"VCS_USER_OPTIONS": "-full64 -sverilog ../../tb/tb_ppu.sv ../../src/ppu.sv -o ppu_presyn.simv"}
+{"vcs1": {"peak_mem": 309772}}

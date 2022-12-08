@@ -1,0 +1,36 @@
+Info:  Net i:/WORK/ppu_DW01_sub_2/CO is undriven.
+Info:  Net i:/WORK/ppu_DW01_sub_1/CO is undriven.
+Info:  Net i:/WORK/ppu_DW01_sub_0/DIFF[0] is undriven.
+Info:  Net i:/WORK/ppu_DW01_sub_0/CO is undriven.
+Info:  Net i:/WORK/add_N_in_N32_0_DW01_add_0/SUM[32] is undriven.
+Info:  Net i:/WORK/add_N_in_N32_0_DW01_add_0/CO is undriven.
+Info:  Net i:/WORK/add_1_N8/c[8] is undriven.
+Info:  Net i:/WORK/sub_N_in_N8_1_DW01_sub_0_DW01_sub_3/DIFF[8] is undriven.
+Info:  Net i:/WORK/sub_N_in_N8_1_DW01_sub_0_DW01_sub_3/CO is undriven.
+Info:  Net i:/WORK/sub_N_in_N32_DW01_sub_0_DW01_sub_4/CO is undriven.
+Info:  Net i:/WORK/add_N_in_N32_1_DW01_add_0_DW01_add_2/CO is undriven.
+Info:  Net i:/WORK/sub_N_in_N8_0_DW01_sub_0_DW01_sub_5/DIFF[8] is undriven.
+Info:  Net i:/WORK/sub_N_in_N8_0_DW01_sub_0_DW01_sub_5/CO is undriven.
+Info:  guide_uniquify 52 (Line: 341)  Multiple entries for instance path 'uut_de1'.
+Info:  guide_uniquify 53 (Line: 347)  Multiple entries for instance path 'uut_abs_regime1'.
+Info:  guide_uniquify 54 (Line: 353)  Multiple entries for instance path 'uut_ediff'.
+Info:  guide_uniquify 55 (Line: 359)  Multiple entries for instance path 'dsr1'.
+Info:  guide_uniquify 56 (Line: 365)  Multiple entries for instance path 'uut_add_sub_N'.
+Info:  guide_uniquify 57 (Line: 371)  Multiple entries for instance path 'l2'.
+Info:  guide_uniquify 58 (Line: 377)  Multiple entries for instance path 'dsl1'.
+Info:  guide_uniquify 59 (Line: 383)  Multiple entries for instance path 'uut_add_mantovf'.
+Info:  guide_uniquify 60 (Line: 389)  Multiple entries for instance path 'uut_reg_ro'.
+Info:  guide_uniquify 61 (Line: 395)  Multiple entries for instance path 'dsr2'.
+Info:  guide_uniquify 62 (Line: 401)  Multiple entries for instance path 'uut_add_ulp'.
+Info:  guide_uniquify 63 (Line: 407)  Can't uniquify, cell 'uut_ediff/s1' not found.
+Info:  guide_uniquify 64 (Line: 413)  Can't uniquify, cell 'uut_add_sub_N/s11' not found.
+Info:  guide_uniquify 65 (Line: 419)  Can't uniquify, cell 'l2/l1' not found.
+Info:  guide_uniquify 66 (Line: 425)  Can't uniquify, cell 'uut_reg_ro/uut_conv_2c1' not found.
+Info:  guide_uniquify 67 (Line: 431)  Can't uniquify, cell 'uut_add_ulp/a1' not found.
+Info:  guide_uniquify 68 (Line: 437)  Can't uniquify, cell 'uut_add_sub_N/s11/s1' not found.
+Info:  guide_uniquify 69 (Line: 443)  Can't uniquify, cell 'l2/l1/genblk1.l' not found.
+Info:  guide_uniquify 70 (Line: 449)  Can't uniquify, cell 'l2/l1/genblk1.l/genblk1.l' not found.
+Info:  guide_uniquify 71 (Line: 455)  Can't uniquify, cell 'l2/l1/genblk1.l/genblk1.l/genblk1.l' not found.
+Info:  guide_uniquify 72 (Line: 461)  Can't uniquify, cell 'l2/l1/genblk1.l/genblk1.l/genblk1.l/genblk1.l' not found.
+
+

@@ -1,0 +1,299 @@
+Loading db file '/apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ppu
+Version: T-2022.03-SP3
+Date   : Wed Dec  7 20:52:08 2022
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ppu                    35000             saed90nm_max
+data_extract_v1_N32_es2_0 8000           saed90nm_max
+abs_regime_N5_0        ForQA             saed90nm_max
+sub_N_N8_0             8000              saed90nm_max
+DSR_right_N_S_N32_S5   8000              saed90nm_max
+add_sub_N_N32          8000              saed90nm_max
+LOD_N_N32_0            8000              saed90nm_max
+DSR_left_N_S_N32_S5_0  8000              saed90nm_max
+add_1_N8               ForQA             saed90nm_max
+reg_exp_op_es2_Bs5     8000              saed90nm_max
+DSR_right_N_S_N99_S5   8000              saed90nm_max
+add_N_N32_0            8000              saed90nm_max
+sub_N_in_N8_0          8000              saed90nm_max
+sub_N_N32              8000              saed90nm_max
+LOD_N32_0              8000              saed90nm_max
+conv_2c_N7             ForQA             saed90nm_max
+add_N_in_N32_0         8000              saed90nm_max
+sub_N_in_N32           8000              saed90nm_max
+LOD_N16_0              8000              saed90nm_max
+LOD_N8_0               ForQA             saed90nm_max
+LOD_N4_0               ForQA             saed90nm_max
+LOD_N2_0               ForQA             saed90nm_max
+data_extract_v1_N32_es2_1 8000           saed90nm_max
+abs_regime_N5_1        ForQA             saed90nm_max
+sub_N_N8_1             8000              saed90nm_max
+LOD_N_N32_1            8000              saed90nm_max
+LOD_N_N32_2            8000              saed90nm_max
+DSR_left_N_S_N32_S5_1  8000              saed90nm_max
+DSR_left_N_S_N32_S5_2  8000              saed90nm_max
+add_N_N32_1            8000              saed90nm_max
+sub_N_in_N8_1          8000              saed90nm_max
+LOD_N32_1              8000              saed90nm_max
+LOD_N32_2              8000              saed90nm_max
+add_N_in_N32_1         8000              saed90nm_max
+LOD_N16_1              8000              saed90nm_max
+LOD_N16_2              8000              saed90nm_max
+LOD_N16_3              8000              saed90nm_max
+LOD_N16_4              8000              saed90nm_max
+LOD_N16_5              8000              saed90nm_max
+LOD_N8_1               ForQA             saed90nm_max
+LOD_N8_2               ForQA             saed90nm_max
+LOD_N8_3               ForQA             saed90nm_max
+LOD_N8_4               ForQA             saed90nm_max
+LOD_N8_5               ForQA             saed90nm_max
+LOD_N8_6               ForQA             saed90nm_max
+LOD_N8_7               ForQA             saed90nm_max
+LOD_N8_8               ForQA             saed90nm_max
+LOD_N8_9               ForQA             saed90nm_max
+LOD_N8_10              ForQA             saed90nm_max
+LOD_N8_11              ForQA             saed90nm_max
+LOD_N4_1               ForQA             saed90nm_max
+LOD_N4_2               ForQA             saed90nm_max
+LOD_N4_3               ForQA             saed90nm_max
+LOD_N4_4               ForQA             saed90nm_max
+LOD_N4_5               ForQA             saed90nm_max
+LOD_N4_6               ForQA             saed90nm_max
+LOD_N4_7               ForQA             saed90nm_max
+LOD_N4_8               ForQA             saed90nm_max
+LOD_N4_9               ForQA             saed90nm_max
+LOD_N4_10              ForQA             saed90nm_max
+LOD_N4_11              ForQA             saed90nm_max
+LOD_N4_12              ForQA             saed90nm_max
+LOD_N4_13              ForQA             saed90nm_max
+LOD_N4_14              ForQA             saed90nm_max
+LOD_N4_15              ForQA             saed90nm_max
+LOD_N4_16              ForQA             saed90nm_max
+LOD_N4_17              ForQA             saed90nm_max
+LOD_N4_18              ForQA             saed90nm_max
+LOD_N4_19              ForQA             saed90nm_max
+LOD_N4_20              ForQA             saed90nm_max
+LOD_N4_21              ForQA             saed90nm_max
+LOD_N4_22              ForQA             saed90nm_max
+LOD_N4_23              ForQA             saed90nm_max
+LOD_N2_1               ForQA             saed90nm_max
+LOD_N2_2               ForQA             saed90nm_max
+LOD_N2_3               ForQA             saed90nm_max
+LOD_N2_4               ForQA             saed90nm_max
+LOD_N2_5               ForQA             saed90nm_max
+LOD_N2_6               ForQA             saed90nm_max
+LOD_N2_7               ForQA             saed90nm_max
+LOD_N2_8               ForQA             saed90nm_max
+LOD_N2_9               ForQA             saed90nm_max
+LOD_N2_10              ForQA             saed90nm_max
+LOD_N2_11              ForQA             saed90nm_max
+LOD_N2_12              ForQA             saed90nm_max
+LOD_N2_13              ForQA             saed90nm_max
+LOD_N2_14              ForQA             saed90nm_max
+LOD_N2_15              ForQA             saed90nm_max
+LOD_N2_16              ForQA             saed90nm_max
+LOD_N2_17              ForQA             saed90nm_max
+LOD_N2_18              ForQA             saed90nm_max
+LOD_N2_19              ForQA             saed90nm_max
+LOD_N2_20              ForQA             saed90nm_max
+LOD_N2_21              ForQA             saed90nm_max
+LOD_N2_22              ForQA             saed90nm_max
+LOD_N2_23              ForQA             saed90nm_max
+LOD_N2_24              ForQA             saed90nm_max
+LOD_N2_25              ForQA             saed90nm_max
+LOD_N2_26              ForQA             saed90nm_max
+LOD_N2_27              ForQA             saed90nm_max
+LOD_N2_28              ForQA             saed90nm_max
+LOD_N2_29              ForQA             saed90nm_max
+LOD_N2_30              ForQA             saed90nm_max
+LOD_N2_31              ForQA             saed90nm_max
+LOD_N2_32              ForQA             saed90nm_max
+LOD_N2_33              ForQA             saed90nm_max
+LOD_N2_34              ForQA             saed90nm_max
+LOD_N2_35              ForQA             saed90nm_max
+LOD_N2_36              ForQA             saed90nm_max
+LOD_N2_37              ForQA             saed90nm_max
+LOD_N2_38              ForQA             saed90nm_max
+LOD_N2_39              ForQA             saed90nm_max
+LOD_N2_40              ForQA             saed90nm_max
+LOD_N2_41              ForQA             saed90nm_max
+LOD_N2_42              ForQA             saed90nm_max
+LOD_N2_43              ForQA             saed90nm_max
+LOD_N2_44              ForQA             saed90nm_max
+LOD_N2_45              ForQA             saed90nm_max
+LOD_N2_46              ForQA             saed90nm_max
+LOD_N2_47              ForQA             saed90nm_max
+ppu_DW01_sub_0         8000              saed90nm_max
+ppu_DW01_sub_1         8000              saed90nm_max
+ppu_DW01_sub_2         8000              saed90nm_max
+add_N_in_N32_0_DW01_add_0 8000           saed90nm_max
+conv_2c_N7_DW01_inc_0_DW01_inc_1 ForQA   saed90nm_max
+sub_N_in_N8_1_DW01_sub_0_DW01_sub_3 8000 saed90nm_max
+sub_N_in_N32_DW01_sub_0_DW01_sub_4 8000  saed90nm_max
+add_N_in_N32_1_DW01_add_0_DW01_add_2 8000 saed90nm_max
+sub_N_in_N8_0_DW01_sub_0_DW01_sub_5 8000 saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ppu                                     879.977 2.17e+03 9.35e+07 3.14e+03 100.0
+  sub_51 (ppu_DW01_sub_2)                 5.717   25.590 3.02e+06   34.323   1.1
+  sub_52 (ppu_DW01_sub_1)                 5.697   25.468 3.02e+06   34.181   1.1
+  sub_159 (ppu_DW01_sub_0)               26.715  123.880 3.02e+06  153.611   4.9
+  uut_add_ulp (add_N_N32_0)              10.107  151.999 3.08e+06  165.188   5.3
+    a1 (add_N_in_N32_0)                  10.107  151.999 3.08e+06  165.188   5.3
+      add_230 (add_N_in_N32_0_DW01_add_0)   10.107  151.999 3.08e+06  165.188   5.3
+  dsr2 (DSR_right_N_S_N99_S5)           160.065  307.419 1.97e+07  487.218  15.5
+  uut_reg_ro (reg_exp_op_es2_Bs5)         6.909   22.458 1.23e+06   30.592   1.0
+    uut_conv_2c1 (conv_2c_N7)             1.781   13.905 5.34e+05   16.220   0.5
+      add_274 (conv_2c_N7_DW01_inc_0_DW01_inc_1)    1.781   13.905 5.34e+05   16.220   0.5
+  uut_add_mantovf (add_1_N8)              4.004   13.962 5.16e+05   18.482   0.6
+  sub3 (sub_N_N8_1)                       3.356   12.084 8.46e+05   16.286   0.5
+    s1 (sub_N_in_N8_1)                    3.356   12.084 8.46e+05   16.286   0.5
+      sub_221 (sub_N_in_N8_1_DW01_sub_0_DW01_sub_3)    3.356   12.084 8.46e+05   16.286   0.5
+  dsl1 (DSR_left_N_S_N32_S5_0)           66.975  197.686 5.12e+06  269.783   8.6
+  l2 (LOD_N_N32_0)                       29.136   68.008 3.21e+06  100.359   3.2
+    l1 (LOD_N32_0)                       29.136   68.008 3.21e+06  100.359   3.2
+      genblk1.h (LOD_N16_5)              12.288   27.789 1.47e+06   41.542   1.3
+        genblk1.h (LOD_N8_9)              4.670    9.843 6.17e+05   15.130   0.5
+          genblk1.h (LOD_N4_17)           1.536    2.873 2.22e+05    4.631   0.1
+            genblk1.h (LOD_N2_33)         0.391    0.503 5.37e+04    0.948   0.0
+            genblk1.l (LOD_N2_34)         0.836    1.710 5.71e+04    2.604   0.1
+          genblk1.l (LOD_N4_18)           2.978    6.417 2.25e+05    9.620   0.3
+            genblk1.h (LOD_N2_35)         1.251    1.843 5.71e+04    3.151   0.1
+            genblk1.l (LOD_N2_36)         0.958    1.969 5.72e+04    2.984   0.1
+        genblk1.l (LOD_N8_10)             7.529   17.475 6.19e+05   25.624   0.8
+          genblk1.h (LOD_N4_19)           3.533    7.008 2.25e+05   10.765   0.3
+            genblk1.h (LOD_N2_37)         1.399    2.060 5.71e+04    3.516   0.1
+            genblk1.l (LOD_N2_38)         1.020    2.088 5.71e+04    3.165   0.1
+          genblk1.l (LOD_N4_20)           3.429    7.399 2.25e+05   11.053   0.4
+            genblk1.h (LOD_N2_39)         1.476    2.175 5.71e+04    3.708   0.1
+            genblk1.l (LOD_N2_40)         1.072    2.200 5.71e+04    3.329   0.1
+      genblk1.l (LOD_N16_0)              16.220   39.735 1.46e+06   57.419   1.8
+        genblk1.h (LOD_N8_11)             8.145   18.797 6.19e+05   27.561   0.9
+          genblk1.h (LOD_N4_21)           3.856    7.664 2.25e+05   11.745   0.4
+            genblk1.h (LOD_N2_41)         1.538    2.265 5.71e+04    3.860   0.1
+            genblk1.l (LOD_N2_42)         1.099    2.256 5.71e+04    3.413   0.1
+          genblk1.l (LOD_N4_22)           3.598    7.752 2.24e+05   11.575   0.4
+            genblk1.h (LOD_N2_43)         1.563    2.299 5.71e+04    3.920   0.1
+            genblk1.l (LOD_N2_44)         1.110    2.283 5.71e+04    3.451   0.1
+        genblk1.l (LOD_N8_0)              7.524   17.608 6.17e+05   25.748   0.8
+          genblk1.h (LOD_N4_23)           3.709    7.343 2.25e+05   11.276   0.4
+            genblk1.h (LOD_N2_45)         1.508    2.220 5.71e+04    3.785   0.1
+            genblk1.l (LOD_N2_46)         1.002    2.074 5.72e+04    3.133   0.1
+          genblk1.l (LOD_N4_0)            3.136    6.863 2.24e+05   10.223   0.3
+            genblk1.h (LOD_N2_47)         1.357    1.996 5.75e+04    3.410   0.1
+            genblk1.l (LOD_N2_0)          0.887    1.912 5.84e+04    2.858   0.1
+  uut_add_sub_N (add_sub_N_N32)         132.222  344.721 8.64e+06  485.586  15.5
+    s11 (sub_N_N32)                      61.011  139.149 3.68e+06  203.838   6.5
+      s1 (sub_N_in_N32)                  61.011  139.149 3.68e+06  203.838   6.5
+        sub_221 (sub_N_in_N32_DW01_sub_0_DW01_sub_4)   61.011  139.149 3.68e+06  203.838   6.5
+    a11 (add_N_N32_1)                    26.434  147.838 3.31e+06  177.585   5.7
+      a1 (add_N_in_N32_1)                26.434  147.838 3.31e+06  177.585   5.7
+        add_230 (add_N_in_N32_1_DW01_add_0_DW01_add_2)   26.434  147.838 3.31e+06  177.585   5.7
+  dsr1 (DSR_right_N_S_N32_S5)           107.015  163.507 5.17e+06  275.696   8.8
+  uut_ediff (sub_N_N8_0)                  9.384   22.369 8.89e+05   32.642   1.0
+    s1 (sub_N_in_N8_0)                    9.384   22.369 8.89e+05   32.642   1.0
+      sub_221 (sub_N_in_N8_0_DW01_sub_0_DW01_sub_5)    9.384   22.369 8.89e+05   32.642   1.0
+  uut_abs_regime2 (abs_regime_N5_1)       2.004    8.475 3.81e+05   10.860   0.3
+  uut_abs_regime1 (abs_regime_N5_0)       5.790    8.551 3.94e+05   14.735   0.5
+  uut_de2 (data_extract_v1_N32_es2_1)    59.737  173.466 1.04e+07  243.581   7.8
+    ls (DSR_left_N_S_N32_S5_1)           35.802   93.147 5.16e+06  134.108   4.3
+    xinst_k (LOD_N_N32_1)                13.143   29.345 3.22e+06   45.711   1.5
+      l1 (LOD_N32_1)                     13.143   29.345 3.22e+06   45.711   1.5
+        genblk1.h (LOD_N16_1)             5.747   14.142 1.47e+06   21.358   0.7
+          genblk1.h (LOD_N8_1)            2.931    6.725 6.21e+05   10.278   0.3
+            genblk1.h (LOD_N4_1)          1.501    2.889 2.27e+05    4.618   0.1
+              genblk1.h (LOD_N2_1)        0.597    0.950 6.10e+04    1.608   0.1
+              genblk1.l (LOD_N2_2)        0.342    0.704 5.72e+04    1.103   0.0
+            genblk1.l (LOD_N4_2)          1.118    2.420 2.25e+05    3.762   0.1
+              genblk1.h (LOD_N2_3)        0.477    0.700 5.71e+04    1.234   0.0
+              genblk1.l (LOD_N2_4)        0.338    0.693 5.71e+04    1.089   0.0
+          genblk1.l (LOD_N8_2)            2.563    5.988 6.19e+05    9.171   0.3
+            genblk1.h (LOD_N4_3)          1.223    2.420 2.25e+05    3.868   0.1
+              genblk1.h (LOD_N2_5)        0.480    0.706 5.71e+04    1.243   0.0
+              genblk1.l (LOD_N2_6)        0.339    0.694 5.71e+04    1.090   0.0
+            genblk1.l (LOD_N4_4)          1.128    2.440 2.25e+05    3.793   0.1
+              genblk1.h (LOD_N2_7)        0.478    0.703 5.72e+04    1.238   0.0
+              genblk1.l (LOD_N2_8)        0.343    0.706 5.72e+04    1.106   0.0
+        genblk1.l (LOD_N16_2)             5.628   13.717 1.47e+06   20.812   0.7
+          genblk1.h (LOD_N8_3)            2.621    6.050 6.19e+05    9.290   0.3
+            genblk1.h (LOD_N4_5)          1.244    2.453 2.25e+05    3.921   0.1
+              genblk1.h (LOD_N2_9)        0.484    0.712 5.72e+04    1.253   0.0
+              genblk1.l (LOD_N2_10)       0.342    0.703 5.72e+04    1.102   0.0
+            genblk1.l (LOD_N4_6)          1.134    2.454 2.25e+05    3.813   0.1
+              genblk1.h (LOD_N2_11)       0.479    0.704 5.71e+04    1.240   0.0
+              genblk1.l (LOD_N2_12)       0.349    0.715 5.71e+04    1.122   0.0
+          genblk1.l (LOD_N8_4)            2.823    6.541 6.19e+05    9.983   0.3
+            genblk1.h (LOD_N4_7)          1.322    2.589 2.25e+05    4.135   0.1
+              genblk1.h (LOD_N2_13)       0.496    0.727 5.71e+04    1.280   0.0
+              genblk1.l (LOD_N2_14)       0.390    0.793 5.71e+04    1.240   0.0
+            genblk1.l (LOD_N4_8)          1.281    2.770 2.24e+05    4.276   0.1
+              genblk1.h (LOD_N2_15)       0.625    0.915 5.71e+04    1.597   0.1
+              genblk1.l (LOD_N2_16)       0.332    0.678 5.71e+04    1.067   0.0
+  uut_de1 (data_extract_v1_N32_es2_0)    59.771  174.091 1.04e+07  244.241   7.8
+    ls (DSR_left_N_S_N32_S5_2)           35.852   93.605 5.16e+06  134.616   4.3
+    xinst_k (LOD_N_N32_2)                13.102   29.316 3.22e+06   45.641   1.5
+      l1 (LOD_N32_2)                     13.102   29.316 3.22e+06   45.641   1.5
+        genblk1.h (LOD_N16_3)             5.714   14.069 1.47e+06   21.253   0.7
+          genblk1.h (LOD_N8_5)            2.901    6.667 6.21e+05   10.189   0.3
+            genblk1.h (LOD_N4_9)          1.491    2.874 2.28e+05    4.593   0.1
+              genblk1.h (LOD_N2_17)       0.600    0.955 6.11e+04    1.616   0.1
+              genblk1.l (LOD_N2_18)       0.338    0.695 5.71e+04    1.091   0.0
+            genblk1.l (LOD_N4_10)         1.107    2.400 2.25e+05    3.732   0.1
+              genblk1.h (LOD_N2_19)       0.470    0.692 5.71e+04    1.219   0.0
+              genblk1.l (LOD_N2_20)       0.337    0.692 5.71e+04    1.087   0.0
+          genblk1.l (LOD_N8_6)            2.563    5.997 6.19e+05    9.179   0.3
+            genblk1.h (LOD_N4_11)         1.230    2.415 2.25e+05    3.869   0.1
+              genblk1.h (LOD_N2_21)       0.470    0.691 5.72e+04    1.218   0.0
+              genblk1.l (LOD_N2_22)       0.335    0.689 5.72e+04    1.082   0.0
+            genblk1.l (LOD_N4_12)         1.114    2.417 2.25e+05    3.756   0.1
+              genblk1.h (LOD_N2_23)       0.480    0.706 5.72e+04    1.243   0.0
+              genblk1.l (LOD_N2_24)       0.334    0.681 5.70e+04    1.072   0.0
+        genblk1.l (LOD_N16_4)             5.642   13.781 1.47e+06   20.891   0.7
+          genblk1.h (LOD_N8_7)            2.605    6.009 6.19e+05    9.233   0.3
+            genblk1.h (LOD_N4_13)         1.227    2.417 2.25e+05    3.868   0.1
+              genblk1.h (LOD_N2_25)       0.477    0.702 5.72e+04    1.236   0.0
+              genblk1.l (LOD_N2_26)       0.337    0.690 5.71e+04    1.084   0.0
+            genblk1.l (LOD_N4_14)         1.130    2.447 2.25e+05    3.802   0.1
+              genblk1.h (LOD_N2_27)       0.484    0.712 5.72e+04    1.254   0.0
+              genblk1.l (LOD_N2_28)       0.341    0.698 5.71e+04    1.096   0.0
+          genblk1.l (LOD_N8_8)            2.853    6.646 6.19e+05   10.118   0.3
+            genblk1.h (LOD_N4_15)         1.348    2.647 2.25e+05    4.220   0.1
+              genblk1.h (LOD_N2_29)       0.507    0.746 5.71e+04    1.310   0.0
+              genblk1.l (LOD_N2_30)       0.391    0.798 5.71e+04    1.246   0.0
+            genblk1.l (LOD_N4_16)         1.280    2.777 2.24e+05    4.282   0.1
+              genblk1.h (LOD_N2_31)       0.619    0.907 5.71e+04    1.582   0.1
+              genblk1.l (LOD_N2_32)       0.336    0.688 5.71e+04    1.081   0.0
+1

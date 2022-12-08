@@ -9,395 +9,437 @@ z2
 cModel Technology
 dC:/Users/Edwin/Documents/College/cpe527/LAB4/modelsim
 vabs_regime
-Z0 !s110 1670463337
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1670471396
 !i10b 1
-!s100 bU^lVA<5Y[0Y<9RYVS97N3
-ITmSY=SQ:M@QhN<eRbM[RR2
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/modelsim
-Z3 w1670117170
-Z4 8C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v
-Z5 FC:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v
-L0 252
-Z6 OV;L;10.5b;63
+!s100 leTd]blJW0kBh8GI:;28g2
+I`Yhh_Rd:aCRML4`So9hT<3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 ppu_sv_unit
+S1
+Z4 dC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/modelsim
+Z5 w1670467136
+Z6 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src_new/ppu.sv
+Z7 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src_new/ppu.sv
+L0 260
+Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1670463337.000000
-Z8 !s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
+Z9 !s108 1670471396.000000
+Z10 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src_new/ppu.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src_new/ppu.sv|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
+Z12 o-work work -sv
+Z13 tCvgOpt 0
 vadd_1
 R0
-!i10b 1
-!s100 @]i6DmPPR034?JbLdhz500
-I3dVK1OiKk2hO?Rl=0A9]D1
 R1
+!i10b 1
+!s100 <NZbaeZ>4WXJ0fZ0MfLmM0
+I2JR3@@nXQe4F9:J9z[>^z2
 R2
 R3
+S1
 R4
 R5
-L0 243
 R6
+R7
+L0 250
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 vadd_N
 R0
-!i10b 1
-!s100 THN92^do?M4iPG;d`OWYI2
-I;<Oe]5_MH[Ve:L_4;m8ol1
 R1
+!i10b 1
+!s100 ImQ5Rgi49W9M10T5@Xbfm0
+ITNWK5EK>zo2Zi2IPg0IVD2
 R2
 R3
+S1
 R4
 R5
-L0 204
 R6
+R7
+L0 205
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 nadd_@n
 vadd_N_in
 R0
-!i10b 1
-!s100 AIT@CC?YajO]?^RB>:faz3
-IZZ7YB1L<:Nj@o91lFTh`I0
 R1
+!i10b 1
+!s100 ZkU::g]]nD[Qh2MLheGS40
+IJQ<X;n@[H70G9_JSg?7c[1
 R2
 R3
+S1
 R4
 R5
-L0 222
 R6
+R7
+L0 226
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 nadd_@n_in
 vadd_sub_N
 R0
-!i10b 1
-!s100 di@o3534VCn9L`BN:4J711
-IIUGNEa41F9TLED;UP4K=;1
 R1
+!i10b 1
+!s100 ]h8<]9RReVIR>ie9n1aHb3
+IQEmo25?a0S21aE47WzEc[0
 R2
 R3
+S1
 R4
 R5
-L0 230
 R6
+R7
+L0 235
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 nadd_sub_@n
 vconv_2c
 R0
-!i10b 1
-!s100 73]YkW]E81kfJaf[Czjal2
-IoZfZIh^;Ae]TWHhdD5j>W0
 R1
+!i10b 1
+!s100 XVFjk9^[=5dSO<R@`XPz`3
+I6FFdEEJY=[P_j;RP^F1Rl3
 R2
 R3
+S1
 R4
 R5
-L0 262
 R6
+R7
+L0 270
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 vdata_extract_v1
 R0
-!i10b 1
-!s100 CRaA1b6HGI`jle^Zb=QA51
-IU2Y:ceG2GWI1dg`ahL7342
 R1
+!i10b 1
+!s100 =f@U2n4?6YRJASbTC`1U=0
+I8nRk6:B06Z[4b8A5jZW]R2
 R2
 R3
+S1
 R4
 R5
-L0 155
 R6
+R7
+L0 165
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 vDSR_left_N_S
 R0
-!i10b 1
-!s100 YFLo]fi5oI]ja13?DYF6F2
-I=A6UL=S_oD@EUkGQ[Tcm`2
 R1
+!i10b 1
+!s100 17XbUzIC@DYNmYXL^kBaR0
+I`DVIUX06NQ]>;UnY=?ajo3
 R2
 R3
+S1
 R4
 R5
-L0 285
 R6
+R7
+L0 295
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 n@d@s@r_left_@n_@s
 vDSR_right_N_S
 R0
-!i10b 1
-!s100 :ViTL>n9HmeWo[0BMZmz92
-IXmZ?2ZASchih8eDe`dXBE1
 R1
+!i10b 1
+!s100 BNNOEz5Ie=7X[e^MC5M<<2
+I45c[11nZHDc2bZKWEWK@12
 R2
 R3
+S1
 R4
 R5
-L0 306
 R6
+R7
+L0 315
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 n@d@s@r_right_@n_@s
 vLOD
 R0
-!i10b 1
-!s100 H^=C_XZKcOVSV=51djb4f1
-I1F?RH0B[oPO_bc3d4VIGA3
 R1
+!i10b 1
+!s100 Jk@LFL3eE?BQhF3_<]ng51
+I99_=IPW<BzDZBezHI^_HZ3
 R2
 R3
+S1
 R4
 R5
-L0 348
 R6
+R7
+L0 346
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 n@l@o@d
 vLOD_N
 R0
-!i10b 1
-!s100 3=GP45<8eVakaW[1_V9za1
-I_39a0n85DG<?2IczhiMC<3
 R1
+!i10b 1
+!s100 F^HSBJE6THhggdP[2EORR0
+I<EGA3c52Hen8B<n<0BjY^1
 R2
 R3
+S1
 R4
 R5
-L0 327
 R6
+R7
+L0 335
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 n@l@o@d_@n
 vposit_add
-R0
+R1
 !i10b 1
 !s100 oZeO_OdK7YKZMbTY_lPW:2
 I9nfjc0=lAY1N4jQc`Tdef0
-R1
 R2
-R3
 R4
-R5
+w1670117170
+8C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v
+FC:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v
 L0 2
-R6
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
+!s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
 !i113 1
-R10
-R11
+Z14 o-work work
+R13
 vposit_add_8bit_tb_v
-R0
+R1
 !i10b 1
 !s100 `9X]?Nm5c<Qgd]1[RH<c=3
 IX_d`3@JYUAa?^LjY3MjMU3
-R1
 R2
+R4
 w1670457719
 8C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v
 FC:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v
 L0 2
-R6
+R8
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v|
 !i113 1
-R10
-R11
+R14
+R13
 vppu
-Z12 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R0
-!i10b 1
-!s100 4I6=YUffW1XkfWzBfheb93
-IIJWUeQ3^Oj8IdDd>mbl6L1
 R1
-!s105 ppu_sv_unit
-S1
+!i10b 1
+!s100 hn;LPo54ICG=h>3g;4h571
+IhJ6zAGNYRGbX`[I@15Tjg0
 R2
-w1670463333
-8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
-FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
-L0 16
+R3
+S1
+R4
+R5
 R6
+R7
+L0 24
+R8
 r1
 !s85 0
 31
-!s108 1670463336.000000
-!s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
-!i113 1
-Z13 o-work work -sv
+R9
+R10
 R11
+!i113 1
+R12
+R13
 vreg_exp_op
 R0
-!i10b 1
-!s100 08e`I=P1kjcPF5IDg@B=h0
-I`hfD`MNgKH9VV4VUnPa3T2
 R1
+!i10b 1
+!s100 HR:Lk9DL1]?9BR5^mT?iF3
+IMzM;JFmWodjNa4>Gk_P[N0
 R2
 R3
+S1
 R4
 R5
-L0 269
 R6
+R7
+L0 278
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 vsub_N
 R0
-!i10b 1
-!s100 VEb54Fc8Q<l@a:Q>IinAh0
-IOG2ZzZMocNjhbPJMXeb292
 R1
+!i10b 1
+!s100 >[dLj]P328AP4L63c?V0K0
+I6`C=@7KfSf7i=93RL^H671
 R2
 R3
+S1
 R4
 R5
-L0 194
 R6
+R7
+L0 193
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 nsub_@n
 vsub_N_in
 R0
-!i10b 1
-!s100 <HkFYo]8oa>N]jibk4T_L0
-IWUkYPc]QZzFjcD>oQAGRk2
 R1
+!i10b 1
+!s100 YMhQ>be[f6nGh[Gj=EAh83
+IBGKbU<fVcmRbDjeaXWTQj0
 R2
 R3
+S1
 R4
 R5
-L0 214
 R6
+R7
+L0 217
+R8
 r1
 !s85 0
 31
-R7
-R8
 R9
-!i113 1
 R10
 R11
+!i113 1
+R12
+R13
 nsub_@n_in
 vtb_ppu
-R12
 R0
+R1
 !i10b 1
 !s100 Q9n<LlkKhh5kZ5eLjYLR91
 IbViXUJj3VnzFN6WP5FlEO1
-R1
+R2
 !s105 tb_ppu_sv_unit
 S1
-R2
+R4
 w1670460370
 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
 L0 12
-R6
+R8
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv|
 !i113 1
+R12
 R13
-R11

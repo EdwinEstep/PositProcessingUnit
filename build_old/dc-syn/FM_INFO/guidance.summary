@@ -1,0 +1,12 @@
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+environment         :          4          0          0          0          4
+instance_map        :         21          0          0          0         21
+mark                :         18          0          0          0         18
+replace             :          1          0          0          0          1
+transformation
+   map              :         13          0          0          0         13
+uniquify            :         19         21          0          0         40
+----------------------------------------------------------------------------
+Total               :         76         21          0          0         97
