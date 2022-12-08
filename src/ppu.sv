@@ -13,7 +13,6 @@
 // */
 `timescale 1ns / 1ps
 
-
 module ppu #(
     N = 32,
     es = 2
@@ -24,7 +23,7 @@ module ppu #(
 );
     localparam Bs = $clog2(N); 
 
-
+    //
     wire s1 = in1[N-1];
     wire s2 = in2[N-1];
     wire zero_tmp1 = |in1[N-2:0];
@@ -156,9 +155,9 @@ endmodule
 
 /////////////////////////
 module data_extract_v1(in, rc, regime, exp, mant);
-    parameter N=16;
-    parameter Bs=$clog2(N);
+    parameter N;
     parameter es = 2;
+    localparam Bs = $clog2(N);
 
     input [N-1:0] in;
     output rc;
@@ -186,7 +185,8 @@ endmodule
 
 /////////////////
 module sub_N (a,b,c);
-    parameter N=10;
+    parameter N;
+
     input [N-1:0] a,b;
     output [N:0] c;
     wire [N:0] ain = {1'b0,a};
@@ -197,7 +197,8 @@ endmodule
 
 /////////////////////////
 module add_N (a,b,c);
-    parameter N=10;
+    parameter N;
+
     input [N-1:0] a,b;
     output [N:0] c;
     wire [N:0] ain = {1'b0,a};
@@ -208,7 +209,8 @@ endmodule
 
 /////////////////////////
 module sub_N_in (a,b,c);
-    parameter N=10;
+    parameter N;
+
     input [N:0] a,b;
     output [N:0] c;
     assign c = a - b;
@@ -217,16 +219,18 @@ endmodule
 
 /////////////////////////
 module add_N_in (a,b,c);
-    parameter N=1a,b;
+    parameter N;
+
+    input [N:0] a,b;
     output [N:0] c;
-    assign c = a +0;
-    input [N:0]  b;
+    assign c = a + b;
 endmodule
 
 
 /////////////////////////
 module add_sub_N (op,a,b,c);
-    parameter N=10;
+    parameter N;
+
     input op;
     input [N-1:0] a,b;
     output [N:0] c;
@@ -240,7 +244,8 @@ endmodule
 
 /////////////////////////
 module add_1 (a,mant_ovf,c);
-    parameter N=10;
+    parameter N;
+
     input [N:0] a;
     input mant_ovf;
     output [N:0] c;
@@ -250,7 +255,8 @@ endmodule
 
 /////////////////////////
 module abs_regime (rc, regime, regime_N);
-    parameter N = 10;
+    parameter N;
+
     input rc;
     input [N-1:0] regime;
     output [N:0] regime_N;
@@ -261,7 +267,8 @@ endmodule
 
 /////////////////////////
 module conv_2c (a,c);
-    parameter N=10;
+    parameter N;
+
     input [N:0] a;
     output [N:0] c;
     assign c = a + 1'b1;
@@ -269,8 +276,9 @@ endmodule
 
 
 module reg_exp_op (exp_o, e_o, r_o);
-    parameter es=3;
-    parameter Bs=5;
+    parameter es;
+    parameter Bs;
+
     input [es+Bs:0] exp_o;
     output [es-1:0] e_o;
     output [Bs-1:0] r_o;
@@ -286,8 +294,9 @@ endmodule
 
 /////////////////////////
 module DSR_left_N_S(a,b,c);
-    parameter N=16;
-    parameter S=4;
+    parameter N;
+    parameter S;
+
     input [N-1:0] a;
     input [S-1:0] b;
     output [N-1:0] c;
@@ -306,8 +315,9 @@ endmodule
 
 /////////////////////////
 module DSR_right_N_S(a,b,c);
-    parameter N=16;
-    parameter S=4;
+    parameter N;
+    parameter S;
+
     input [N-1:0] a;
     input [S-1:0] b;
     output [N-1:0] c;
@@ -327,8 +337,9 @@ endmodule
 
 /////////////////////////
 module LOD_N (in, out);
-    parameter N = 64;
-    parameter S = $clog2(N); 
+    parameter N;
+    localparam S = $clog2(N);
+
     input [N-1:0] in;
     output [S-1:0] out;
 
@@ -338,8 +349,8 @@ endmodule
 
 /////////////////////////
 module LOD (in, out, vld);
-    parameter N = 64;
-    parameter S = $clog2(N);
+    parameter N;
+    localparam S = $clog2(N);
 
     input [N-1:0] in;
     output [S-1:0] out;
