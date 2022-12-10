@@ -1,6 +1,10 @@
 # PositProcessingUnit
 Open-source SystemVerilog HDL model for a Posit-compatible arithmetic unit. HDL in this repository, as well as the associated testbench, was modified from [PACoGen](https://github.com/manish-kj/PACoGen).
 
+Currently, the only change has been to make addition and subtraciton explicitly use carry lookahead logic. The carry lookahead module was borrowed from [nandland's design](https://github.com/nandland/nandland/tree/master/Carry%20Lookahead%20Adder).
+
+`pending synthesis...`
+
 <br>
 
 ## Resources
