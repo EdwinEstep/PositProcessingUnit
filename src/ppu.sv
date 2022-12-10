@@ -31,25 +31,35 @@ module ppu #(
 );
     localparam Bs = $clog2(N); 
 
-    //
-    wire s1 = in1[N-1];
-    wire s2 = in2[N-1];
+    // Check whether either (or both) inputs are zero or INF
     wire zero_tmp1 = |in1[N-2:0];
     wire zero_tmp2 = |in2[N-2:0];
     wire inf1 = in1[N-1] & (~zero_tmp1),
         inf2 = in2[N-1] & (~zero_tmp2);
-    wire zero1 = ~(in1[N-1] | zero_tmp1),
+    wire zero1 = ~(in1[N-1] | zero_tmp1), 
         zero2 = ~(in2[N-1] | zero_tmp2);
+
+    // If EITHER is INF, the output is INF, but both must be
+    // zero to have zero output.
     assign inf = inf1 | inf2,
         zero = zero1 & zero2;
 
+
     //Data Extraction
+    wire s1 = in1[N-1];
+    wire s2 = in2[N-1];
     wire rc1, rc2;
     wire [Bs-1:0] regime1, regime2;
     wire [es-1:0] e1, e2;
     wire [N-es-1:0] mant1, mant2;
-    wire [N-1:0] xin1 = s1 ? -in1 : in1;
-    wire [N-1:0] xin2 = s2 ? -in2 : in2;
+
+    // Take 2's complement of the input if it's negative (ie. make all inputs positive)
+    wire [N-1:0] in1_neg, in2_neg;
+    convert_2s_comp #(.N(N)) conv_in1_2scomp (.a(in1), .c(in1_neg));
+    convert_2s_comp #(.N(N)) conv_in2_2scomp (.a(in2), .c(in2_neg));
+    wire [N-1:0] xin1 = s1 ? in1_neg : in1;
+    wire [N-1:0] xin2 = s2 ? in2_neg : in2;
+
     data_extract_v1 #(.N(N),.es(es)) uut_de1(.in(xin1), .rc(rc1), .regime(regime1), .exp(e1), .mant(mant1));
     data_extract_v1 #(.N(N),.es(es)) uut_de2(.in(xin2), .rc(rc2), .regime(regime2), .exp(e2), .mant(mant2));
 
@@ -122,14 +132,15 @@ module ppu #(
 
     //Exponent and Regime Computation
     wire [es+Bs+1:0] le_o_tmp, le_o;
-    sub_N #(.N(es+Bs+1)) sub3 ({lr_N,le}, {{es+1{1'b0}},left_shift}, le_o_tmp);
+
+    sub_N #(.N(es+Bs+1)) sub3 ({lr_N,le}, {{es+1{1'b0}},left_shift}, le_o_tmp); 
     add_1 #(.N(es+Bs+1)) uut_add_mantovf (le_o_tmp, mant_ovf[1], le_o);
 
     wire [es-1:0] e_o;
     wire [Bs-1:0] r_o;
     reg_exp_op #(.es(es), .Bs(Bs)) uut_reg_ro (le_o[es+Bs:0], e_o, r_o);
 
-    //Exponent and Mantissa Packing
+    //Exponent and Mantissa Packing 
     wire [2*N-1+3:0] tmp_o;
     generate
         if(es > 2)
@@ -146,8 +157,8 @@ module ppu #(
 
 
     //Rounding RNE : ulp_add = G.(R + S) + L.G.(~(R+S))
-    wire L = tmp1_o[N+4], G = tmp1_o[N+3], R = tmp1_o[N+2], St = |tmp1_o[N+1:0],
-        ulp = ((G & (R | St)) | (L & G & ~(R | St)));
+    wire L = tmp1_o[N+4], G = tmp1_o[N+3], R = tmp1_o[N+2], St = |tmp1_o[N+1:0];
+    wire ulp = ((G & (R | St)) | (L & G & ~(R | St)));
     wire [N-1:0] rnd_ulp = {{N-1{1'b0}},ulp};
 
     wire [N:0] tmp1_o_rnd_ulp;
@@ -156,6 +167,10 @@ module ppu #(
 
 
     //Final Output
+    // use explicit hardware for potentially faster hardware
+    wire [N-1:0] tmp1_o_rnd_neg;
+    convert_2s_comp #(.N(N)) conv_tmp_o_2scomp (.a(tmp1_o_rnd), .c(tmp1_o_rnd_neg));
+
     wire [N-1:0] tmp1_oN = ls ? -tmp1_o_rnd : tmp1_o_rnd;
     assign out = inf|zero|(~DSR_left_out[N-1]) ? {inf,{N-1{1'b0}}} : {ls, tmp1_oN[N-1:1]};
 endmodule
@@ -179,6 +194,7 @@ module data_extract_v1 #(N, es) (in, rc, regime, exp, mant);
     wire [Bs-1:0] k;
     LOD_N #(.N(N)) xinst_k(.in({xin_r[N-2:0],rc^1'b0}), .out(k));
 
+    // TODO:  use faster conversion    
     assign regime = rc ? k-1 : k;
 
     wire [N-1:0] xin_tmp;
@@ -188,6 +204,8 @@ module data_extract_v1 #(N, es) (in, rc, regime, exp, mant);
     assign mant= xin_tmp[N-es-1:0];
 endmodule
 
+
+// === ITT:  way too many redundant addition and subtraciton modules ===
 
 /////////////////
 module sub_N #(N) (a,b,c);
@@ -218,7 +236,13 @@ module sub_N_in #(N) (a,b,c);
     input [N:0] a,b;
     output [N:0] c;
 
-    assign c = a - b;
+    wire [N+1:0] sum;
+
+    // TODO:  replace the inversions before and after computation with a
+    //  borrow-lookahead adder.
+    carry_lookahead_adder #(.WIDTH(N+1)) conv_cla(.i_add1(~a), .i_add2(b), .o_result(sum));
+
+    assign c = ~sum[N:0];
 endmodule
 
 
@@ -227,7 +251,10 @@ module add_N_in #(N) (a,b,c);
     input [N:0] a,b;
     output [N:0] c;
 
-    assign c = a + b;
+    wire [N+1:0] sum;
+
+    carry_lookahead_adder #(.WIDTH(N+1)) conv_cla(.i_add1(a), .i_add2(b), .o_result(sum));
+    assign c = sum[N:0];
 endmodule
 
 
@@ -252,7 +279,11 @@ module add_1 #(N) (a,mant_ovf,c);
     input mant_ovf;
     output [N:0] c;
 
-    assign c = a + mant_ovf;
+    wire [N+1:0] sum;
+
+    carry_lookahead_adder #(.WIDTH(N+1)) conv_cla(.i_add1(a), .i_add2({{N{1'b0}}, mant_ovf}), .o_result(sum));
+
+    assign c = sum[N:0];
 endmodule
 
 
@@ -262,17 +293,42 @@ module abs_regime #(N) (rc, regime, regime_N);
     input [N-1:0] regime;
     output [N:0] regime_N;
 
+    // use conversion module here.
     assign regime_N = rc ? {1'b0,regime} : -{1'b0,regime};
 endmodule
 
 
 /////////////////////////
+// Use carry lookahead to speed up conversion
+module convert_2s_comp #(N) (a,c);
+    input [N-1:0] a;
+    output [N-1:0] c;
+
+    wire [N:0] sum;
+
+    carry_lookahead_adder #(.WIDTH(N)) conv_cla(.i_add1(~a), .i_add2({{(N-1){1'b0}}, 1'b1}), .o_result(sum));
+
+    assign c = sum[N-1:0];
+endmodule
+
+
+
+/////////////////////////
+// Use carry lookahead to speed up conversion
 module conv_2c #(N) (a,c);
     input [N:0] a;
     output [N:0] c;
 
-    assign c = a + 1'b1;
+    wire [N+1:0] sum;
+
+    carry_lookahead_adder #(.WIDTH(N+1)) conv_cla(.i_add1(a), .i_add2({{N{1'b0}}, 1'b1}), .o_result(sum));
+
+    assign c = sum[N:0];
 endmodule
+
+
+
+// === \ITT:  way too many redundant addition and subtraciton modules ===
 
 
 module reg_exp_op #(es, Bs) (exp_o, e_o, r_o);
@@ -287,6 +343,8 @@ module reg_exp_op #(es, Bs) (exp_o, e_o, r_o);
 
     assign e_o = exp_o[es-1:0];
     assign exp_oN = exp_o[es+Bs] ? exp_oN_tmp[es+Bs:0] : exp_o[es+Bs:0];
+
+    // TODO:  consider using carry lookahead in the addition
     assign r_o = (~exp_o[es+Bs] || |(exp_oN[es-1:0])) ? exp_oN[es+Bs-1:es] + 1 : exp_oN[es+Bs-1:es];
 endmodule
 
