@@ -10,23 +10,23 @@ cModel Technology
 dC:/Users/Edwin/Documents/College/cpe527/LAB4/modelsim
 vabs_regime
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1670640977
+Z1 !s110 1670674521
 !i10b 1
-!s100 b_X3_n]T<VXbJF;i=e@a:3
-IkRj2dERZ:MlHbXZJFaYe43
+!s100 KfAN00edF4hYHiQHoHVNX3
+I@[BoR<W>;R0T[Qec?kPMV0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 !s105 ppu_sv_unit
 S1
 Z4 dC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/modelsim
-Z5 w1670640975
+Z5 w1670641348
 Z6 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
 Z7 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
-L0 289
+L0 291
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1670640977.000000
+Z9 !s108 1670674521.000000
 Z10 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
 Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv|
 !i113 1
@@ -36,8 +36,8 @@ vadd_1
 R0
 R1
 !i10b 1
-!s100 d_:^JkknRiUhleRo5d3EL0
-Ih<JE<OJeZV4Ei1H<O@PWn0
+!s100 [[odOXP9Q101Yc:OdD_hh3
+IIBTkWWb]k<[KaFSBcDP5;3
 R2
 R3
 S1
@@ -45,7 +45,7 @@ R4
 R5
 R6
 R7
-L0 275
+L0 277
 R8
 r1
 !s85 0
@@ -85,8 +85,8 @@ vadd_N_in
 R0
 R1
 !i10b 1
-!s100 l4Vzhm?FgB:FhmzV0j9O01
-Ihl^laBo]aIfU9_PjojHee2
+!s100 2I58:Q]YgA]Vo?gch1ekT1
+I7[]5gld1ne_Q:`4]i5PzQ2
 R2
 R3
 S1
@@ -94,7 +94,7 @@ R4
 R5
 R6
 R7
-L0 248
+L0 250
 R8
 r1
 !s85 0
@@ -110,8 +110,8 @@ vadd_sub_N
 R0
 R1
 !i10b 1
-!s100 =PnBmbQ:1^DNdj>?z[S=g0
-I?QQ8=VcK=<>41^_PcRmBk3
+!s100 j@W1c;DecGcF]L4TkSe6<1
+IziON70DAl[CB5Fejz2k7m3
 R2
 R3
 S1
@@ -119,7 +119,7 @@ R4
 R5
 R6
 R7
-L0 260
+L0 262
 R8
 r1
 !s85 0
@@ -131,55 +131,100 @@ R11
 R12
 R13
 nadd_sub_@n
-Eaddsub_28
-Z14 w1143555285
-Z15 DPx4 work 7 fpupack 0 22 j`6YlX=QjIbJmR1BnAcg53
-Z16 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
-Z17 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
-Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z19 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z20 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z21 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+vaddRecFN
+R1
+!i10b 1
+!s100 _i?Dd6ST632N[`Ez03eAI0
+IcFWcLP9h2T@<8i@cf?UW32
+R2
 R4
-Z22 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd
-Z23 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd
+Z14 w1670673411
+Z15 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v
+Z16 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v
+L0 208
+R8
+r1
+!s85 0
+31
+R9
+Z17 !s107 ../fp/HardFloat_localFuncs.vi|../fp/HardFloat_specialize.vi|../fp/HardFloat_consts.vi|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v|
+!i113 1
+Z19 o-work work
+R13
+nadd@rec@f@n
+vaddRecFNToRaw
+R1
+!i10b 1
+!s100 BiEJPW=PMiOgkbNn@Hz]^0
+Ige`[i4MAa@<mP9g31T<en3
+R2
+R4
+R14
+R15
+R16
+F../fp/HardFloat_localFuncs.vi
+L0 45
+R8
+r1
+!s85 0
+31
+R9
+R17
+R18
+!i113 1
+R19
+R13
+nadd@rec@f@n@to@raw
+Eaddsub_28
+Z20 w1143555285
+Z21 DPx4 work 7 fpupack 0 22 j`6YlX=QjIbJmR1BnAcg53
+Z22 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z23 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z24 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z25 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z26 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z27 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R4
+Z28 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd
+Z29 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd
 l0
 L54
 Vl^?M5bY?g4;0N[VIN>Yj11
 !s100 4JYf4RHX9el3a;^oBIfFh3
-Z24 OV;C;10.5b;63
+Z30 OV;C;10.5b;63
 32
-Z25 !s110 1670553348
+Z31 !s110 1670553348
 !i10b 1
-Z26 !s108 1670553348.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd|
-Z28 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd|
+Z32 !s108 1670553348.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd|
+Z34 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/addsub_28.vhd|
 !i113 1
-Z29 o-work work -2002 -explicit
-Z30 tExplicit 1 CvgOpt 0
+Z35 o-work work -2002 -explicit
+Z36 tExplicit 1 CvgOpt 0
 Artl
-R15
-R16
-R17
-R18
-R19
-R20
 R21
+R22
+R23
+R24
+R25
+R26
+R27
 DEx4 work 9 addsub_28 0 22 l^?M5bY?g4;0N[VIN>Yj11
 l77
 L67
 Voe<=S6d;0kbdX6AcP=YWU1
 !s100 ^ia?7o?V^MeJm?0OHbW8g2
-R24
-32
-R25
-!i10b 1
-R26
-R27
-R28
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R35
+R36
 vcarry_lookahead_adder
 R0
 R1
@@ -211,29 +256,29 @@ R0
 !s100 :]63ZkgSh>oDKP>[c5MLZ2
 IUJ7Eo1d[2hKQ;a99<0`z[3
 R2
-Z31 !s105 tb_carry_lookahead_adder_sv_unit
+Z37 !s105 tb_carry_lookahead_adder_sv_unit
 S1
 R4
 w1670634998
-Z32 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv
-Z33 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv
+Z38 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv
+Z39 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv
 L0 5
 R8
 r1
 !s85 0
 31
 !s108 1670635004.000000
-!s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv|
-Z34 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv|
+Z40 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv|
+Z41 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv|
 !i113 1
 R12
 R13
 Pcomppack
-R15
-R18
-R19
-R20
 R21
+R24
+R25
+R26
+R27
 w1670553208
 R4
 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/comppack.vhd
@@ -242,22 +287,66 @@ l0
 L52
 VKG87iQ3Bchk^C`D;0JMVL3
 !s100 C:UmSQKnd67mTV49^[Q0k3
-R24
+R30
 32
 !s110 1670553349
 !i10b 1
-R26
+R32
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/comppack.vhd|
 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/comppack.vhd|
 !i113 1
-R29
-R30
+R35
+R36
+vcompressBy2
+R1
+!i10b 1
+!s100 Qo5JcfM4obIW==^13WKiS1
+IKSO^9gUlNU[T[mNgo]78U1
+R2
+R4
+Z42 w1670642640
+Z43 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v
+Z44 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v
+Z45 L0 140
+R8
+r1
+!s85 0
+31
+R9
+Z46 !s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v|
+Z47 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v|
+!i113 1
+R19
+R13
+ncompress@by2
+vcompressBy4
+R1
+!i10b 1
+!s100 LMd`EBQD2BHT<jco4=TI21
+ILfcEN0CNfOl[b;ZIk;Mae3
+R2
+R4
+R42
+R43
+R44
+L0 159
+R8
+r1
+!s85 0
+31
+R9
+R46
+R47
+!i113 1
+R19
+R13
+ncompress@by4
 vconv_2c
 R0
 R1
 !i10b 1
-!s100 17=1F370Je=]]O2]=7RKf0
-IlAmCW4ghCn^@KSVhZfZhd0
+!s100 Nh7onZQbDlYoK]JMY;1?a2
+I?1[LEHUCKRNDm<QVkF2^h1
 R2
 R3
 S1
@@ -265,7 +354,7 @@ R4
 R5
 R6
 R7
-L0 316
+L0 318
 R8
 r1
 !s85 0
@@ -280,8 +369,8 @@ vconvert_2s_comp
 R0
 R1
 !i10b 1
-!s100 0OIGm?eIQMh6>NVzA0z632
-I9z;S^D4R29neW=<Yo@;jY2
+!s100 A[keUOeKeMN2Dk6Vl[`950
+IKcSdZS?l<35V8?EHG;ZcU3
 R2
 R3
 S1
@@ -289,7 +378,7 @@ R4
 R5
 R6
 R7
-L0 301
+L0 303
 R8
 r1
 !s85 0
@@ -300,26 +389,48 @@ R11
 !i113 1
 R12
 R13
+vcountLeadingZeros
+R1
+!i10b 1
+!s100 2m=:LJzo<V<45klcWI;3_1
+INCT[LGW>WDDWoXn3RMCA@2
+R2
+R4
+R42
+R43
+R44
+L0 112
+R8
+r1
+!s85 0
+31
+R9
+R46
+R47
+!i113 1
+R19
+R13
+ncount@leading@zeros
 vd_ff
-R25
+R31
 !i10b 1
 !s100 `Q?K>b2I<ZgaCIzOVIVQl3
 I9]Gj8E3PcP_dK[]bjSblS0
 R2
 R4
-Z35 w1392836981
+Z48 w1392836981
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/d_ff.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/d_ff.v
-Z36 L0 22
+Z49 L0 22
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/d_ff.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/d_ff.v|
 !i113 1
-Z37 o-work work
+R19
 R13
 vdata_extract_v1
 R0
@@ -349,8 +460,8 @@ vDSR_left_N_S
 R0
 R1
 !i10b 1
-!s100 IOB1GzXX:X`8N:E;M33[Z0
-I?n;0i41=Z1G@@9]YoP?c=2
+!s100 0b^V8=0iKOPJam0NFF;ai2
+I6]:iZ>QLl^z<NJ>X1ZI6K3
 R2
 R3
 S1
@@ -358,7 +469,7 @@ R4
 R5
 R6
 R7
-L0 351
+L0 353
 R8
 r1
 !s85 0
@@ -374,8 +485,8 @@ vDSR_right_N_S
 R0
 R1
 !i10b 1
-!s100 m`GcXbKA:Y<Hj4@zDI;bD0
-Ic`^`UUaoVgLLYgGK<ERgU3
+!s100 FWMK?2L=YfefC7W?=DFz70
+Io@gaY5CEBF^c@GBZBO^4>1
 R2
 R3
 S1
@@ -383,7 +494,7 @@ R4
 R5
 R6
 R7
-L0 371
+L0 373
 R8
 r1
 !s85 0
@@ -396,863 +507,907 @@ R12
 R13
 n@d@s@r_right_@n_@s
 veffective_op
-R25
+R31
 !i10b 1
 !s100 CVPGO`Um3;az7iM6IK2iE3
 ISM[]cQGfP[@`FU0aMYm9P1
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/effective_op.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/effective_op.v
-Z38 L0 21
+Z50 L0 21
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/effective_op.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/effective_op.v|
 !i113 1
-R37
+R19
 R13
 Eexample_tb
-Z39 w1670551089
-R18
-R20
-R21
+Z51 w1670551089
+R24
+R26
+R27
 R4
-Z40 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd
-Z41 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd
+Z52 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd
+Z53 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd
 l0
 L7
 VN@=ZMk`9nRE<U=W^oFTGC2
 !s100 hdD62]@`87SolhG4n<`ZF1
-R24
-32
-Z42 !s110 1670551189
-!i10b 1
-Z43 !s108 1670551189.000000
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd|
-Z45 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd|
-!i113 1
-R29
 R30
+32
+Z54 !s110 1670551189
+!i10b 1
+Z55 !s108 1670551189.000000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd|
+Z57 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/tb/tb_fpadd_single_cycle.vhd|
+!i113 1
+R35
+R36
 Atest
-R18
-R20
-R21
+R24
+R26
+R27
 DEx4 work 10 example_tb 0 22 N@=ZMk`9nRE<U=W^oFTGC2
 l28
 L11
 VoEE]nO^8^8mU84>z87FfG0
 !s100 KkOa9V0<nQDHI4CYWZD=90
-R24
-32
-R42
-!i10b 1
-R43
-R44
-R45
-!i113 1
-R29
 R30
+32
+R54
+!i10b 1
+R55
+R56
+R57
+!i113 1
+R35
+R36
 Efpadd
-Z46 w1154125945
-R18
-R20
-R21
+Z58 w1154125945
+R24
+R26
+R27
 R4
-Z47 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd
-Z48 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd
+Z59 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd
+Z60 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd
 l0
 L16
 V_IH@NTdR=oomi9Pee4iDi2
 !s100 5Fmlh_cQl<CigL2n5=J[02
-R24
-32
-Z49 !s110 1670552429
-!i10b 1
-Z50 !s108 1670552429.000000
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd|
-Z52 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd|
-!i113 1
-R29
 R30
+32
+Z61 !s110 1670552429
+!i10b 1
+Z62 !s108 1670552429.000000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd|
+Z64 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_single_cycle.vhd|
+!i113 1
+R35
+R36
 Asingle_cycle
-Z53 DEx4 work 8 unpackfp 0 22 37[Dg7h=I0ajFd?7fl2Kd2
-Z54 DEx4 work 6 packfp 0 22 SAP3f_<554a1hXBziN:3V0
-Z55 DEx4 work 6 fpswap 0 22 GJC@XXL4ajOO`YP@G;b]g3
-Z56 DEx4 work 15 fpselcomplement 0 22 ;5R]1dklTC1]zgXbPYl`e3
-Z57 DEx4 work 7 fpround 0 22 BX15nlgCVRGnc@dNLElZb3
-R19
-Z58 DEx4 work 11 fpnormalize 0 22 a;a;MC5565j5@A>o9RFOX0
-Z59 DEx4 work 8 fpinvert 0 22 80DAal1a`b5MkX?]dh0EM1
-Z60 DEx4 work 7 fpalign 0 22 j<c@]dFg6jEJzjJEUoCV@0
-Z61 DEx4 work 15 fpadd_normalize 0 22 ZGYUGR@8D3F^k=K`:<XYl3
-Z62 DEx4 work 5 fpadd 0 22 _IH@NTdR=oomi9Pee4iDi2
-R18
-R20
-R21
+Z65 DEx4 work 8 unpackfp 0 22 37[Dg7h=I0ajFd?7fl2Kd2
+Z66 DEx4 work 6 packfp 0 22 SAP3f_<554a1hXBziN:3V0
+Z67 DEx4 work 6 fpswap 0 22 GJC@XXL4ajOO`YP@G;b]g3
+Z68 DEx4 work 15 fpselcomplement 0 22 ;5R]1dklTC1]zgXbPYl`e3
+Z69 DEx4 work 7 fpround 0 22 BX15nlgCVRGnc@dNLElZb3
+R25
+Z70 DEx4 work 11 fpnormalize 0 22 a;a;MC5565j5@A>o9RFOX0
+Z71 DEx4 work 8 fpinvert 0 22 80DAal1a`b5MkX?]dh0EM1
+Z72 DEx4 work 7 fpalign 0 22 j<c@]dFg6jEJzjJEUoCV@0
+Z73 DEx4 work 15 fpadd_normalize 0 22 ZGYUGR@8D3F^k=K`:<XYl3
+Z74 DEx4 work 5 fpadd 0 22 _IH@NTdR=oomi9Pee4iDi2
+R24
+R26
+R27
 l233
 L46
 VJKQjco8[L6K][8QZeaRSH3
 !s100 RdzW]`zcfC[QNi8SKKSTB1
-R24
-32
-R49
-!i10b 1
-R50
-R51
-R52
-!i113 1
-R29
 R30
-Apipeline
-Z63 DEx4 work 12 fpadd_stage6 0 22 JB_G<kShzW0I@Y?;T8dU_0
-Z64 DEx4 work 12 fpadd_stage5 0 22 hZR:5LO5?RQ6@A`8SLPCR1
-Z65 DEx4 work 12 fpadd_stage4 0 22 kFHm8=o^NoA>g:jBFcLe62
-Z66 DEx4 work 12 fpadd_stage3 0 22 7RC1nNH7dnfh3nOBgMd3D3
-Z67 DEx4 work 12 fpadd_stage2 0 22 JhGN2OPO<F^aPgNT6]dEc0
-Z68 DEx4 work 12 fpadd_stage1 0 22 `O]DRFe5gPBRBz:1aA06T0
+32
+R61
+!i10b 1
 R62
-R18
-R20
-R21
+R63
+R64
+!i113 1
+R35
+R36
+Apipeline
+Z75 DEx4 work 12 fpadd_stage6 0 22 JB_G<kShzW0I@Y?;T8dU_0
+Z76 DEx4 work 12 fpadd_stage5 0 22 hZR:5LO5?RQ6@A`8SLPCR1
+Z77 DEx4 work 12 fpadd_stage4 0 22 kFHm8=o^NoA>g:jBFcLe62
+Z78 DEx4 work 12 fpadd_stage3 0 22 7RC1nNH7dnfh3nOBgMd3D3
+Z79 DEx4 work 12 fpadd_stage2 0 22 JhGN2OPO<F^aPgNT6]dEc0
+Z80 DEx4 work 12 fpadd_stage1 0 22 `O]DRFe5gPBRBz:1aA06T0
+R74
+R24
+R26
+R27
 l247
 L46
 V3Si0>kf]Y<LYg;dCkWCFF2
 !s100 4Ni4[G8CNzTbc7Df>lbVP0
-R24
+R30
 32
-R49
+R61
 !i10b 1
-R50
+R62
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_pipeline.vhd|
 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_pipeline.vhd|
 !i113 1
-R29
-R30
+R35
+R36
 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_pipeline.vhd
 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_pipeline.vhd
 Efpadd_normalize
-Z69 w1277143341
-R18
-R20
-R21
+Z81 w1277143341
+R24
+R26
+R27
 R4
-Z70 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd
-Z71 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd
+Z82 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd
+Z83 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd
 l0
 L16
 VZGYUGR@8D3F^k=K`:<XYl3
 !s100 YoT<5kABE_Tko;BoGH:N[1
-R24
-32
-R49
-!i10b 1
-R50
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd|
-Z73 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd|
-!i113 1
-R29
 R30
-Astruct
-Z74 DEx4 work 5 fplzc 0 22 nkd3[zn8<k`eEhcD_Ki^c3
+32
 R61
-R19
-R18
-R20
-R21
+!i10b 1
+R62
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd|
+Z85 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_normalize_struct.vhd|
+!i113 1
+R35
+R36
+Astruct
+Z86 DEx4 work 5 fplzc 0 22 nkd3[zn8<k`eEhcD_Ki^c3
+R73
+R25
+R24
+R26
+R27
 l81
 L47
 V>=:8b[m_0G4U9[T3:B<LL2
 !s100 7AbLc5o[?U^z2f]V`og^=0
-R24
-32
-R49
-!i10b 1
-R50
-R72
-R73
-!i113 1
-R29
 R30
+32
+R61
+!i10b 1
+R62
+R84
+R85
+!i113 1
+R35
+R36
 Efpadd_stage1
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z75 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd
-Z76 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd
+Z87 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd
+Z88 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd
 l0
 L16
 V`O]DRFe5gPBRBz:1aA06T0
 !s100 9HKmI]fRoF[S?SOzPXchM1
-R24
-32
-R49
-!i10b 1
-R50
-Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd|
-Z78 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd|
-!i113 1
-R29
 R30
+32
+R61
+!i10b 1
+R62
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd|
+Z90 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage1_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R53
-R68
-R18
-R20
-R21
+R65
+R80
+R24
+R26
+R27
 l108
 L60
 VB<FT3;_COa:C^`giTIni<3
 !s100 B7>@H^ULZ1^`YoXiK6:Wg1
-R24
-32
-R49
-!i10b 1
-R50
-R77
-R78
-!i113 1
-R29
 R30
+32
+R61
+!i10b 1
+R62
+R89
+R90
+!i113 1
+R35
+R36
 Efpadd_stage2
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z79 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd
-Z80 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd
+Z91 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd
+Z92 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd
 l0
 L16
 VJhGN2OPO<F^aPgNT6]dEc0
 !s100 QDE3P@`FGB<nbl=Bg`K_Y3
-R24
-32
-R49
-!i10b 1
-R50
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd|
-Z82 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd|
-!i113 1
-R29
 R30
+32
+R61
+!i10b 1
+R62
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd|
+Z94 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage2_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R55
-R60
 R67
-R18
-R20
-R21
+R72
+R79
+R24
+R26
+R27
 l129
 L68
 VPze_USnN3AD95<FaDkL<n3
 !s100 6aGY4B?J?;1iD[REoI<_i1
-R24
-32
-R49
-!i10b 1
-R50
-R81
-R82
-!i113 1
-R29
 R30
+32
+R61
+!i10b 1
+R62
+R93
+R94
+!i113 1
+R35
+R36
 Efpadd_stage3
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z83 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd
-Z84 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd
+Z95 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd
+Z96 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd
 l0
 L16
 V7RC1nNH7dnfh3nOBgMd3D3
 !s100 Vg3zSjiDP[7g6K0h^:Ffo1
-R24
-32
-Z85 !s110 1670552430
-!i10b 1
-R50
-Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd|
-Z87 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd|
-!i113 1
-R29
 R30
+32
+Z97 !s110 1670552430
+!i10b 1
+R62
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd|
+Z99 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage3_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R59
-R66
-R18
-R20
-R21
+R71
+R78
+R24
+R26
+R27
 l91
 L60
 V6`cYf2MlMWB[ik@B:zYnm3
 !s100 2V[?52oodYM0LCA]@Ug@I1
-R24
-32
-R85
-!i10b 1
-R50
-R86
-R87
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R62
+R98
+R99
+!i113 1
+R35
+R36
 Efpadd_stage4
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z88 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd
-Z89 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd
+Z100 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd
+Z101 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd
 l0
 L16
 VkFHm8=o^NoA>g:jBFcLe62
 !s100 XPh2;Xakhf>FaK3fCGQio2
-R24
-32
-R85
-!i10b 1
-Z90 !s108 1670552430.000000
-Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd|
-Z92 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+Z102 !s108 1670552430.000000
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd|
+Z104 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage4_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R19
-R56
-R61
-R65
-R18
-R20
-R21
+R25
+R68
+R73
+R77
+R24
+R26
+R27
 l104
 L57
 VQ>nWMAMze_Rhhfm^O;PoV3
 !s100 TPFXIz?7?fOBWGI=O3<oU3
-R24
-32
-R85
-!i10b 1
-R90
-R91
-R92
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R103
+R104
+!i113 1
+R35
+R36
 Efpadd_stage5
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z93 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd
-Z94 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd
+Z105 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd
+Z106 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd
 l0
 L16
 VhZR:5LO5?RQ6@A`8SLPCR1
 !s100 laD5MClLSI6?QDREIlkkR0
-R24
-32
-R85
-!i10b 1
-R90
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd|
-Z96 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd|
+Z108 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage5_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R57
-R19
-R58
-R64
-R18
-R20
-R21
+R69
+R25
+R70
+R76
+R24
+R26
+R27
 l100
 L58
 VJd2hORD[YE<<kQ=O3P=:z0
 !s100 2GOU:<::@:A^@NSoDGeaQ0
-R24
-32
-R85
-!i10b 1
-R90
-R95
-R96
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R107
+R108
+!i113 1
+R35
+R36
 Efpadd_stage6
-R46
-R18
-R20
-R21
+R58
+R24
+R26
+R27
 R4
-Z97 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd
-Z98 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd
+Z109 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd
+Z110 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd
 l0
 L16
 VJB_G<kShzW0I@Y?;T8dU_0
 !s100 STX=7GDFQ>Y@GC[i5^hac2
-R24
-32
-R85
-!i10b 1
-R90
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd|
-Z100 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd|
+Z112 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpadd_stage6_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R54
-R63
-R18
-R20
-R21
+R66
+R75
+R24
+R26
+R27
 l82
 L51
 VkUm^U85iRBACzM<6KnHD42
 !s100 _aDf7Ae0S;mT;Bb@m]RQC3
-R24
-32
-R85
-!i10b 1
-R90
-R99
-R100
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R111
+R112
+!i113 1
+R35
+R36
 Efpalign
-Z101 w1099659995
-R18
-R20
-R21
+Z113 w1099659995
+R24
+R26
+R27
 R4
-Z102 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd
-Z103 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd
+Z114 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd
+Z115 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd
 l0
 L16
 Vj<c@]dFg6jEJzjJEUoCV@0
 !s100 0<oRQ2;DB=dSWhAIVd7Wz0
-R24
-32
-R85
-!i10b 1
-R90
-Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd|
-Z105 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd|
+Z117 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpalign_struct.vhd|
+!i113 1
+R35
+R36
 Astruct
-R60
-R19
-R18
-R20
-R21
+R72
+R25
+R24
+R26
+R27
 l60
 L49
 VQeFj_<odNZ;`FKQa?iBWj1
 !s100 b:;Q1Sfh:UXbKZ7X[WCV10
-R24
-32
-R85
-!i10b 1
-R90
-R104
-R105
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R116
+R117
+!i113 1
+R35
+R36
 Efpinvert
-R101
-R18
-R20
-R21
+R113
+R24
+R26
+R27
 R4
-Z106 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd
-Z107 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd
+Z118 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd
+Z119 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd
 l0
 L16
 V80DAal1a`b5MkX?]dh0EM1
 !s100 XQ6o^HMM^@_A=>Z?kZ@0L2
-R24
-32
-R85
-!i10b 1
-R90
-Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd|
-Z109 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd|
+Z121 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpinvert_fpinvert.vhd|
+!i113 1
+R35
+R36
 Afpinvert
-R18
-R20
-R21
-R59
+R24
+R26
+R27
+R71
 l36
 L35
 VM<eBXba0oAX6g^VQRIn0B3
 !s100 AQPzQL16RXm2cFU_3jdma2
-R24
-32
-R85
-!i10b 1
-R90
-R108
-R109
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R120
+R121
+!i113 1
+R35
+R36
 Efplzc
-R101
-R18
-R20
-R21
+R113
+R24
+R26
+R27
 R4
-Z110 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd
-Z111 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd
+Z122 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd
+Z123 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd
 l0
 L16
 Vnkd3[zn8<k`eEhcD_Ki^c3
 !s100 d3J:eG3@aYiF2^jRomi^H2
-R24
-32
-R85
-!i10b 1
-R90
-Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd|
-Z113 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd|
+Z125 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fplzc_fplzc.vhd|
+!i113 1
+R35
+R36
 Afplzc
-R18
-R20
-R21
-R74
+R24
+R26
+R27
+R86
 l30
 L29
 VAG:<NGAo?Nb[I6>VX6@h@2
 !s100 GlGNf?L@Qn[<I6PDczkd71
-R24
-32
-R85
-!i10b 1
-R90
-R112
-R113
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R124
+R125
+!i113 1
+R35
+R36
 Efpnormalize
-R101
-R19
-R18
-R20
-R21
+R113
+R25
+R24
+R26
+R27
 R4
-Z114 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd
-Z115 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd
+Z126 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd
+Z127 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd
 l0
 L17
 Va;a;MC5565j5@A>o9RFOX0
 !s100 BUjUAMkjQc3i8Jl5B5FoX0
-R24
-32
-Z116 !s110 1670552431
-!i10b 1
-R90
-Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd|
-Z118 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd|
-!i113 1
-R29
 R30
+32
+Z128 !s110 1670552431
+!i10b 1
+R102
+Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd|
+Z130 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpnormalize_fpnormalize.vhd|
+!i113 1
+R35
+R36
 Afpnormalize
-R19
-R18
-R20
-R21
-R58
+R25
+R24
+R26
+R27
+R70
 l35
 L34
 V@<eTo9ghTJ8i?WYZ]l2IS0
 !s100 I6J0=:VN^oWBdKzYW7[Mg3
-R24
-32
-R116
-!i10b 1
-R90
-R117
-R118
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R102
+R129
+R130
+!i113 1
+R35
+R36
 Efpround
-R101
-R19
-R18
-R20
-R21
+R113
+R25
+R24
+R26
+R27
 R4
-Z119 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd
-Z120 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd
+Z131 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd
+Z132 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd
 l0
 L17
 VBX15nlgCVRGnc@dNLElZb3
 !s100 Ie14d[iLcC63KLGjc:z<A1
-R24
-32
-R116
-!i10b 1
-Z121 !s108 1670552431.000000
-Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd|
-Z123 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd|
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+Z133 !s108 1670552431.000000
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd|
+Z135 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/fpround_fpround.vhd|
+!i113 1
+R35
+R36
 Afpround
-R19
-R18
-R20
-R21
-R57
+R25
+R24
+R26
+R27
+R69
 l35
 L34
 V1aN2VDa4m9`S:m3UQ8WQe1
 !s100 ndTGM7]9X@o`5EOkU2jll3
-R24
-32
-R116
-!i10b 1
-R121
-R122
-R123
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+R134
+R135
+!i113 1
+R35
+R36
 Efpselcomplement
-R101
-R19
-R18
-R20
-R21
+R113
+R25
+R24
+R26
+R27
 R4
-Z124 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd
-Z125 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd
+Z136 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd
+Z137 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd
 l0
 L17
 V;5R]1dklTC1]zgXbPYl`e3
 !s100 fXf36C3?IMS@HXK`C[VM:1
-R24
-32
-R85
-!i10b 1
-R90
-Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd|
-Z127 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd|
+Z139 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpselcomplement_fpselcomplement.vhd|
+!i113 1
+R35
+R36
 Afpselcomplement
-R19
-R18
-R20
-R21
-R56
+R25
+R24
+R26
+R27
+R68
 l35
 L34
 VlQ@?GaU3jhd2GQBPjPJ0Q2
 !s100 ^3Tn7JboCkF`9WOXCgfAa0
-R24
-32
-R85
-!i10b 1
-R90
-R126
-R127
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R138
+R139
+!i113 1
+R35
+R36
 Efpswap
-R101
-R18
-R20
-R21
+R113
+R24
+R26
+R27
 R4
-Z128 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd
-Z129 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd
+Z140 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd
+Z141 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd
 l0
 L16
 VGJC@XXL4ajOO`YP@G;b]g3
 !s100 :90b5lZ7Bl:ilSdJfTXdP2
-R24
-32
-R85
-!i10b 1
-R90
-Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd|
-Z131 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd|
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd|
+Z143 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/adder/fpswap_fpswap.vhd|
+!i113 1
+R35
+R36
 Afpswap
-R18
-R20
-R21
-R55
+R24
+R26
+R27
+R67
 l35
 L34
 Vm>SSkUhYlidlgdT;<8O]n1
 !s100 LBeN;@>3;Z8FkDOSKH6k92
-R24
-32
-R85
-!i10b 1
-R90
-R130
-R131
-!i113 1
-R29
 R30
+32
+R97
+!i10b 1
+R102
+R142
+R143
+!i113 1
+R35
+R36
 Efpu
-Z132 w1670553343
-R15
-R18
-R19
-Z133 DPx4 work 8 comppack 0 22 KG87iQ3Bchk^C`D;0JMVL3
-R16
-R17
-Z134 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-R20
+Z144 w1670553343
 R21
+R24
+R25
+Z145 DPx4 work 8 comppack 0 22 KG87iQ3Bchk^C`D;0JMVL3
+R22
+R23
+Z146 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R26
+R27
 R4
-Z135 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd
-Z136 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd
+Z147 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd
+Z148 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd
 l0
 L56
 VlVV4QioH[B:z_MNdHef]`2
 !s100 3Sj6487gz?GJgiCQ0?T=>3
-R24
-32
-R25
-!i10b 1
-R26
-Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd|
-Z138 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd|
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd|
+Z150 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpu_addsub.vhd|
+!i113 1
+R35
+R36
 Artl
-R15
-R18
-R19
-R133
-R16
-R17
-R134
-R20
 R21
+R24
+R25
+R145
+R22
+R23
+R146
+R26
+R27
 DEx4 work 3 fpu 0 22 lVV4QioH[B:z_MNdHef]`2
 l135
 L104
 VDHTfW3E>RTh7lE^U`z3Gd1
 !s100 dCOHzfi3klP^Dfg@UH[LT1
-R24
-32
-R25
-!i10b 1
-R26
-R137
-R138
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+R149
+R150
+!i113 1
+R35
+R36
 Pfpupack
-R18
-R19
+R24
+R25
+R26
+R27
 R20
-R21
-R14
 R4
-Z139 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd
-Z140 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd
+Z151 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd
+Z152 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd
 l0
 L49
 Vj`6YlX=QjIbJmR1BnAcg53
 !s100 kA=zH`>cVNSh<AQ;PEK502
-R24
+R30
 32
 b1
-R25
+R31
 !i10b 1
-R26
-Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd|
-Z142 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd|
+R32
+Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd|
+Z154 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/fpupack.vhd|
 !i113 1
-R29
-R30
+R35
+R36
 Bbody
-R15
-R18
-R19
-R20
 R21
+R24
+R25
+R26
+R27
 l0
 L81
 Vn5dm@Vc0T7560_TMRUK<W3
 !s100 [4LKel4T4;@64jE=XKPh31
-R24
-32
-R25
-!i10b 1
-R26
-R141
-R142
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+R153
+R154
+!i113 1
+R35
+R36
+viNFromException
+R1
+!i10b 1
+!s100 zemlHGlK6LfMNHRZ?iC3o2
+I6goNFbm0>J]9TL2Rhcme]3
+R2
+R4
+Z155 w1670674455
+Z156 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v
+Z157 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v
+Z158 L0 44
+R8
+r1
+!s85 0
+31
+R9
+Z159 !s107 C:\Users\Edwin\Documents\College\cpe527\PositProcessingUnit\fp\HardFloat_specialize.vi|C:\Users\Edwin\Documents\College\cpe527\PositProcessingUnit\fp\HardFloat_consts.vi|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v|
+Z160 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v|
+!i113 1
+R19
+R13
+ni@n@from@exception
+visSigNaNRecFN
+R1
+!i10b 1
+!s100 <A^1T:bZB8bIZ1K@PY:9?0
+I2Gmo?K;KMkUjRWaU>QdMl0
+R2
+R4
+R42
+8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v
+FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v
+Z161 L0 41
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v|
+!i113 1
+R19
+R13
+nis@sig@na@n@rec@f@n
 vleading_zeros
-R25
+R31
 !i10b 1
 !s100 NT2jeM;==_f1_3`VZDYXD1
 IPzY?B:4MQo=_BPKD6Ln;D1
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/leading_zeros.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/leading_zeros.v
-R38
+R50
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/leading_zeros.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/leading_zeros.v|
 !i113 1
-R37
+R19
 R13
 vLOD
 R0
 R1
 !i10b 1
-!s100 7d;z098>h]SB]YFzcI7nN1
-IOXP:9j9mLFGQbV9:<LLBN3
+!s100 _AG8PYM[d1QHnnWo7NgE22
+IBo[X8ECAGD`h<P1]K33W<3
 R2
 R3
 S1
@@ -1260,7 +1415,7 @@ R4
 R5
 R6
 R7
-L0 402
+L0 404
 R8
 r1
 !s85 0
@@ -1276,8 +1431,8 @@ vLOD_N
 R0
 R1
 !i10b 1
-!s100 GU?oQQ5V1:eFmS^H=[POC0
-I7Z<V7?XicHcDd5]NPdC8;2
+!s100 0V@I`]ez5WC9ei^334j4Q1
+I@ZXO[^ic_8KdIZD0=i1_g3
 R2
 R3
 S1
@@ -1285,7 +1440,7 @@ R4
 R5
 R6
 R7
-L0 391
+L0 393
 R8
 r1
 !s85 0
@@ -1297,6 +1452,50 @@ R11
 R12
 R13
 n@l@o@d_@n
+vlowMaskHiLo
+R1
+!i10b 1
+!s100 G5I7<IaoPL6a442H_l1210
+IK`Mj2j8[>7a_4]1FzM10z3
+R2
+R4
+R42
+R43
+R44
+L0 58
+R8
+r1
+!s85 0
+31
+R9
+R46
+R47
+!i113 1
+R19
+R13
+nlow@mask@hi@lo
+vlowMaskLoHi
+R1
+!i10b 1
+!s100 1=]khZNi;4:N3O<T0T:K_3
+IZ@ize9ejno`:hP;I0`?JH2
+R2
+R4
+R42
+R43
+R44
+L0 85
+R8
+r1
+!s85 0
+31
+R9
+R46
+R47
+!i113 1
+R19
+R13
+nlow@mask@lo@hi
 vmodule_full_adder
 R0
 R1
@@ -1322,48 +1521,48 @@ R9
 R12
 R13
 Epackfp
-R101
-R18
-R20
-R21
+R113
+R24
+R26
+R27
 R4
-Z143 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd
-Z144 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd
+Z162 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd
+Z163 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd
 l0
 L16
 VSAP3f_<554a1hXBziN:3V0
 !s100 01>7]i`Z0N7NH9g:Ga>l=0
-R24
-32
-R116
-!i10b 1
-R121
-Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd|
-Z146 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd|
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd|
+Z165 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/packfp_packfp.vhd|
+!i113 1
+R35
+R36
 Apackfp
-R18
-R20
-R21
-R54
+R24
+R26
+R27
+R66
 l34
 L33
 V[7ccQP1Q;1CJQl?0]gBNH0
 !s100 boEIjXMzHClblfW8W7BJS0
-R24
-32
-R116
-!i10b 1
-R121
-R145
-R146
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+R164
+R165
+!i113 1
+R35
+R36
 vposit_add
-Z147 !s110 1670553347
+Z166 !s110 1670553347
 !i10b 1
 !s100 oZeO_OdK7YKZMbTY_lPW:2
 I9nfjc0=lAY1N4jQc`Tdef0
@@ -1377,14 +1576,14 @@ R8
 r1
 !s85 0
 31
-Z148 !s108 1670553347.000000
+Z167 !s108 1670553347.000000
 !s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add.v|
 !i113 1
-R37
+R19
 R13
 vposit_add_8bit_tb_v
-R147
+R166
 !i10b 1
 !s100 `9X]?Nm5c<Qgd]1[RH<c=3
 IX_d`3@JYUAa?^LjY3MjMU3
@@ -1398,61 +1597,61 @@ R8
 r1
 !s85 0
 31
-R148
+R167
 !s107 C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PACoGen/add/posit_add_8bit_tb.v|
 !i113 1
-R37
+R19
 R13
 Epost_norm_addsub
-Z149 w1153568445
-R15
-R16
-R17
-R18
-R19
-R20
+Z168 w1153568445
 R21
+R22
+R23
+R24
+R25
+R26
+R27
 R4
-Z150 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd
-Z151 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd
+Z169 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd
+Z170 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd
 l0
 L53
 VZ5dNn@zPL:EB?:LQ?0GL53
 !s100 XCZHeU8zHVP8<gFmRHjkc2
-R24
-32
-R25
-!i10b 1
-R26
-Z152 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd|
-Z153 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd|
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+Z171 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd|
+Z172 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/post_norm_addsub.vhd|
+!i113 1
+R35
+R36
 Artl
-R15
-R16
-R17
-R18
-R19
-R20
 R21
+R22
+R23
+R24
+R25
+R26
+R27
 DEx4 work 16 post_norm_addsub 0 22 Z5dNn@zPL:EB?:LQ?0GL53
 l98
 L69
 VTNJcEDddZ]5dOH^f5VbX32
 !s100 z94aE4>W@cFG9oGdI>OVH1
-R24
-32
-R25
-!i10b 1
-R26
-R152
-R153
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+R171
+R172
+!i113 1
+R35
+R36
 vppu
 R0
 R1
@@ -1466,7 +1665,7 @@ R4
 R5
 R6
 R7
-Z154 L0 24
+Z173 L0 24
 R8
 r1
 !s85 0
@@ -1478,60 +1677,170 @@ R11
 R12
 R13
 Epre_norm_addsub
-Z155 w1153046618
-R15
-R16
-R17
-R18
-R19
-R20
+Z174 w1153046618
 R21
+R22
+R23
+R24
+R25
+R26
+R27
 R4
-Z156 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd
-Z157 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd
+Z175 8C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd
+Z176 FC:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd
 l0
 L53
 V00jh:BGd8fEMmjeVDV@YZ1
 !s100 YOkmY]n[Xn^Ym16R^><Gn1
-R24
-32
-R25
-!i10b 1
-R26
-Z158 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd|
-Z159 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd|
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+Z177 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd|
+Z178 !s107 C:/Users/Edwin/Documents/College/cpe527/fp100_addsub/pre_norm_addsub.vhd|
+!i113 1
+R35
+R36
 Artl
-R15
-R16
-R17
-R18
-R19
-R20
 R21
+R22
+R23
+R24
+R25
+R26
+R27
 DEx4 work 15 pre_norm_addsub 0 22 00jh:BGd8fEMmjeVDV@YZ1
 l86
 L65
 V0=enmTb5kHK7HUZMd;`K01
 !s100 bdGC64FKSX:4W6bYBKZaC2
-R24
-32
-R25
-!i10b 1
-R26
-R158
-R159
-!i113 1
-R29
 R30
+32
+R31
+!i10b 1
+R32
+R177
+R178
+!i113 1
+R35
+R36
+vpropagateFloatNaN_add
+R1
+!i10b 1
+!s100 9;_PIRF1jKEQn@MQmQ`fE0
+IDlL<c6^RZ4M[]d;ZVgH=X1
+R2
+R4
+R155
+R156
+R157
+L0 59
+R8
+r1
+!s85 0
+31
+R9
+R159
+R160
+!i113 1
+R19
+R13
+npropagate@float@na@n_add
+vpropagateFloatNaN_divSqrt
+R1
+!i10b 1
+!s100 WWOlOZEU;671^Wg3g[jVz3
+I1fRT=lX1<hiLQI@03aUUZ3
+R2
+R4
+R155
+R156
+R157
+R45
+R8
+r1
+!s85 0
+31
+R9
+R159
+R160
+!i113 1
+R19
+R13
+npropagate@float@na@n_div@sqrt
+vpropagateFloatNaN_mul
+R1
+!i10b 1
+!s100 <^L8V6LlUSh`P2;jLaeCV0
+ITW2a9mfQn4O0l^z2^;gJX0
+R2
+R4
+R155
+R156
+R157
+L0 84
+R8
+r1
+!s85 0
+31
+R9
+R159
+R160
+!i113 1
+R19
+R13
+npropagate@float@na@n_mul
+vpropagateFloatNaN_mulAdd
+R1
+!i10b 1
+!s100 Ca331g1Hh=P8dT>[dCSYE3
+IIb:N:Tm8GemcZJNdkXP750
+R2
+R4
+R155
+R156
+R157
+L0 108
+R8
+r1
+!s85 0
+31
+R9
+R159
+R160
+!i113 1
+R19
+R13
+npropagate@float@na@n_mul@add
+vrecFNToRawFN
+R1
+!i10b 1
+!s100 bYiHb_b?oh`1PD4WAL6cS2
+IK1kaY9_6=<K:YC_YMdR@`1
+R2
+R4
+R42
+Z179 8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v
+Z180 FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v
+R158
+R8
+r1
+!s85 0
+31
+R9
+Z181 !s107 C:\Users\Edwin\Documents\College\cpe527\PositProcessingUnit\fp\HardFloat_specialize.vi|C:\Users\Edwin\Documents\College\cpe527\PositProcessingUnit\fp\HardFloat_consts.vi|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v|
+Z182 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v|
+!i113 1
+R19
+R13
+nrec@f@n@to@raw@f@n
 vreg_exp_op
 R0
 R1
 !i10b 1
-!s100 <V1MOiL@HmKQdMQ<F[0Q<0
-I21EWR6C8cGTi38cPV^0851
+!s100 Z=`Ko>jd3j=9[Ui@W83iT0
+IJm<V7;oXGV2@I5TD:iM1W2
 R2
 R3
 S1
@@ -1539,7 +1848,7 @@ R4
 R5
 R6
 R7
-L0 332
+L0 334
 R8
 r1
 !s85 0
@@ -1550,56 +1859,121 @@ R11
 !i113 1
 R12
 R13
+vreverse
+R1
+!i10b 1
+!s100 5SgC[]SVI_bN4TZO:c3l93
+IkzBJSS4OCDXK?hgEoMd:l0
+R2
+R4
+R42
+R43
+R44
+R161
+R8
+r1
+!s85 0
+31
+R9
+R46
+R47
+!i113 1
+R19
+R13
+vroundAnyRawFNToRecFN
+R1
+!i10b 1
+!s100 4dBQA4177VFzBAimzGUeX1
+I_AXf<7mYbC7cB?cj36^I=3
+R2
+R4
+R42
+R179
+R180
+L0 74
+R8
+r1
+!s85 0
+31
+R9
+R181
+R182
+!i113 1
+R19
+R13
+nround@any@raw@f@n@to@rec@f@n
 vrounding
-R25
+R31
 !i10b 1
 !s100 YTZjF5g8_T:U7_e5H]d2F2
 IK:W<26Le^8S]=1;azzD^T2
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/rounding.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/rounding.v
-R36
+R49
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/rounding.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/rounding.v|
 !i113 1
-R37
+R19
 R13
+vroundRawFNToRecFN
+R1
+!i10b 1
+!s100 lCWF:Vd;[GQ8RkQb4Am440
+I45=jUZH39Jjc`]8TD95be2
+R2
+R4
+R42
+R179
+R180
+L0 324
+R8
+r1
+!s85 0
+31
+R9
+R181
+R182
+!i113 1
+R19
+R13
+nround@raw@f@n@to@rec@f@n
 vshifter
-R25
+R31
 !i10b 1
 !s100 :0?<B:8]8de`ELd1X7c_W3
 I>ea<jjS3EW7>C5iC5C;c`0
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/shifter.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/shifter.v
-R36
+R49
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/shifter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/shifter.v|
 !i113 1
-R37
+R19
 R13
 vSinglePathFPAdder
-R25
+R31
 !i10b 1
 !s100 5HkOSnN_0db6c26QW0Bjn3
 IL>G;hg1M4C`aBLd4]TcHW1
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/SinglePathFPAdder.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/SinglePathFPAdder.v
 L0 27
@@ -1607,33 +1981,33 @@ R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/SinglePathFPAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/SinglePathFPAdder.v|
 !i113 1
-R37
+R19
 R13
 n@single@path@f@p@adder
 vspecial_cases
-R25
+R31
 !i10b 1
 !s100 eG0Sae^G200PKI1dhG]^82
 IzZJN640egY`C0gl6Tk:6l1
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/special_cases.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/special_cases.v
-R38
+R50
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/special_cases.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/special_cases.v|
 !i113 1
-R37
+R19
 R13
 vsub_N
 R0
@@ -1664,8 +2038,8 @@ vsub_N_in
 R0
 R1
 !i10b 1
-!s100 >ic1`EX3eP4<iSFWTDI;e1
-IL47<;ZAo^nVOa?2HA6;U80
+!s100 RTaXaFIeNcMW?iSGB2JZz0
+IbL<m7C@Y]0]B0[bV`f8b90
 R2
 R3
 S1
@@ -1686,26 +2060,51 @@ R12
 R13
 nsub_@n_in
 vtb_adder
-R25
+R31
 !i10b 1
 !s100 Z9>okl:E<kzzW[0BAeDZA0
 I@CRKDV8KXe9?Og4HG?D0`2
 R2
 R4
-R35
+R48
 8C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/tb_adder.v
 FC:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/tb_adder.v
-R154
+R173
 R8
 r1
 !s85 0
 31
-R26
+R32
 !s107 C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/tb_adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Edwin/Documents/College/cpe527/xilinx_virtex_fp_library/SinglePathFPAdder/tb_adder.v|
 !i113 1
-R37
+R19
 R13
+vtb_addRecFN
+R0
+R1
+!i10b 1
+!s100 OX[R6ZNzF4dZR9=5k5D@b0
+IAh@WK6aH_IQC?=Wf1C2FJ2
+R2
+!s105 tb_addRecFN_sv_unit
+S1
+R4
+w1670674516
+8C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv
+FC:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv|
+!i113 1
+R12
+R13
+ntb_add@rec@f@n
 vtb_carry_lookahead_adder
 R0
 R1
@@ -1713,64 +2112,64 @@ R1
 !s100 9oU^B>R4@iDzfhkLnkMmW0
 IPI]an3Ihb@o`zRGjK6AHE2
 R2
-R31
+R37
 S1
 R4
 w1670635156
-R32
-R33
+R38
+R39
 L0 5
 R8
 r1
 !s85 0
 31
 R9
-!s107 C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv|
-R34
+R40
+R41
 !i113 1
 R12
 R13
 Etb_fpadd_single_cycle
-Z160 w1670551875
-R18
-R20
-R21
+Z183 w1670551875
+R24
+R26
+R27
 R4
-R40
-R41
+R52
+R53
 l0
 L7
 VWh]WFRfZ__XL@X:MWHLUZ0
 !s100 gjSXe589naJAYP0`lACkh1
-R24
-32
-R116
-!i10b 1
-R121
-R44
-R45
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+R56
+R57
+!i113 1
+R35
+R36
 Atest
-R18
-R20
-R21
+R24
+R26
+R27
 DEx4 work 21 tb_fpadd_single_cycle 0 22 Wh]WFRfZ__XL@X:MWHLUZ0
 l28
 L11
 V:4PB:BoPRJ2WU^ijEz5YN0
 !s100 Qc2n9zMD`AblZ]KdQ=Emg2
-R24
-32
-R116
-!i10b 1
-R121
-R44
-R45
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+R56
+R57
+!i113 1
+R35
+R36
 vtb_ppu
 R0
 R1
@@ -1796,43 +2195,43 @@ R9
 R12
 R13
 Eunpackfp
-R101
-R18
-R20
-R21
+R113
+R24
+R26
+R27
 R4
-Z161 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd
-Z162 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd
+Z184 8C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd
+Z185 FC:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd
 l0
 L15
 V37[Dg7h=I0ajFd?7fl2Kd2
 !s100 iXK2eKKm@g^[^1N:863BC1
-R24
-32
-R116
-!i10b 1
-R121
-Z163 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd|
-Z164 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd|
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+Z186 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd|
+Z187 !s107 C:/Users/Edwin/Documents/College/cpe527/fpuvhdl/common/unpackfp_unpackfp.vhd|
+!i113 1
+R35
+R36
 Aunpackfp
-R18
-R20
-R21
-R53
+R24
+R26
+R27
+R65
 l37
 L33
 VJUFeK?hRB=<IVP7VTiXR73
 !s100 LM2:M<W34`8Dk4EdA2IlO0
-R24
-32
-R116
-!i10b 1
-R121
-R163
-R164
-!i113 1
-R29
 R30
+32
+R128
+!i10b 1
+R133
+R186
+R187
+!i113 1
+R35
+R36

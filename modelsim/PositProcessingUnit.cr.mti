@@ -1,9 +1,56 @@
-C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
+C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/ppu.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_ppu
+-- Compiling module ppu
+-- Compiling module data_extract_v1
+-- Compiling module sub_N
+-- Compiling module add_N
+-- Compiling module sub_N_in
+-- Compiling module add_N_in
+-- Compiling module add_sub_N
+-- Compiling module add_1
+-- Compiling module abs_regime
+-- Compiling module convert_2s_comp
+-- Compiling module conv_2c
+-- Compiling module reg_exp_op
+-- Compiling module DSR_left_N_S
+-- Compiling module DSR_right_N_S
+-- Compiling module LOD_N
+-- Compiling module LOD
 
 Top level modules:
-	tb_ppu
+	ppu
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_rawFN.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module recFNToRawFN
+-- Compiling module roundAnyRawFNToRecFN
+-- Compiling module roundRawFNToRecFN
+
+Top level modules:
+	recFNToRawFN
+	roundRawFNToRecFN
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/isSigNaNRecFN.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module isSigNaNRecFN
+
+Top level modules:
+	isSigNaNRecFN
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module iNFromException
+-- Compiling module propagateFloatNaN_add
+-- Compiling module propagateFloatNaN_mul
+-- Compiling module propagateFloatNaN_mulAdd
+-- Compiling module propagateFloatNaN_divSqrt
+
+Top level modules:
+	iNFromException
+	propagateFloatNaN_add
+	propagateFloatNaN_mul
+	propagateFloatNaN_mulAdd
+	propagateFloatNaN_divSqrt
 
 } {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_carry_lookahead_adder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -11,6 +58,9 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	tb_carry_lookahead_adder
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_consts.vi {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_consts.vi
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
 } {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/carry_lookahead_adder.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/src/carry_lookahead_adder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -25,5 +75,46 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	module_full_adder
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_ppu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_ppu
+
+Top level modules:
+	tb_ppu
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.vi {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_specialize.vi
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv {1 {vlog -work work -sv -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/tb/tb_addRecFN.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_addRecFN
+
+Top level modules:
+	tb_addRecFN
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/addRecFN.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module addRecFNToRaw
+-- Compiling module addRecFN
+
+Top level modules:
+	addRecFN
+
+} {} {}} C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v {1 {vlog -work work -stats=none C:/Users/Edwin/Documents/College/cpe527/PositProcessingUnit/fp/HardFloat_primitives.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reverse
+-- Compiling module lowMaskHiLo
+-- Compiling module lowMaskLoHi
+-- Compiling module countLeadingZeros
+-- Compiling module compressBy2
+-- Compiling module compressBy4
+
+Top level modules:
+	lowMaskHiLo
+	lowMaskLoHi
+	countLeadingZeros
+	compressBy2
+	compressBy4
 
 } {} {}}
